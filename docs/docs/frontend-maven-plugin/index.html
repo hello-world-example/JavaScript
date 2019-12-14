@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frontend Maven Plugin | JavaScript</title>
+
+
+<link rel="stylesheet" href="/JavaScript/book.min.79de1f7861b0c98f453c0a93bebf3608a280809e417787746c373699639900d7.css">
+
+
+
+
+<link rel="icon" href="/JavaScript/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://hello-world-example.github.io/JavaScript/">JavaScript</a>
+</h2>
+
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fJavaScript\2f docs\2f frontend-maven-plugin\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><strong>Npm</strong>
+
+<ul>
+<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速入门</a></li>
+<li><a href="/JavaScript/docs/Npm/Package.json/">package.json</a></li>
+<li><a href="/JavaScript/docs/Npm/Command/">常用命令</a></li>
+<li><a href="/JavaScript/docs/Npm/FAQ/">常见问题</a></li>
+</ul></li>
+<li><strong>Yarn</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Vue</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Element UI</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Vue Element Admin</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><a href="/JavaScript/docs/frontend-maven-plugin/">frontend-maven-plugin</a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/JavaScript/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>Frontend Maven Plugin</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="frontend-maven-plugin">frontend-maven-plugin</h1>
+
+<blockquote>
+<ul>
+<li>官网 ： <a href="https://github.com/eirslett/frontend-maven-plugin">https://github.com/eirslett/frontend-maven-plugin</a></li>
+</ul>
+</blockquote>
+
+<h2 id="npm-示例">NPM 示例</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- https://github.com/eirslett/frontend-maven-plugin#usage --&gt;</span>
+<span style="color:#f92672">&lt;plugin&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.github.eirslett<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>frontend-maven-plugin<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>1.8.0<span style="color:#f92672">&lt;/version&gt;</span>
+
+    <span style="color:#f92672">&lt;configuration&gt;</span>
+        <span style="color:#f92672">&lt;workingDirectory&gt;</span>${project.basedir}/src/main/resources/node<span style="color:#f92672">&lt;/workingDirectory&gt;</span>
+        <span style="color:#75715e">&lt;!-- Latest LTS Version: 12.13.0 (includes npm 6.12.0) --&gt;</span>
+        <span style="color:#75715e">&lt;!-- 文档 : http://npm.taobao.org/mirrors/node/v12.13.0/docs/api/index.html --&gt;</span>
+        <span style="color:#f92672">&lt;nodeVersion&gt;</span>v12.13.0<span style="color:#f92672">&lt;/nodeVersion&gt;</span>
+        <span style="color:#75715e">&lt;!-- 默认 : https://nodejs.org/dist/ --&gt;</span>
+        <span style="color:#f92672">&lt;nodeDownloadRoot&gt;</span>https://npm.taobao.org/mirrors/node/<span style="color:#f92672">&lt;/nodeDownloadRoot&gt;</span>
+        <span style="color:#75715e">&lt;!-- 包下载地址，默认：https://registry.npmjs.org/npm/-/ --&gt;</span>
+        <span style="color:#f92672">&lt;npmDownloadRoot&gt;</span>https://registry.npm.taobao.org/<span style="color:#f92672">&lt;/npmDownloadRoot&gt;</span>
+    <span style="color:#f92672">&lt;/configuration&gt;</span>
+
+    <span style="color:#f92672">&lt;executions&gt;</span>
+        <span style="color:#75715e">&lt;!-- 安装 node 和 npm --&gt;</span>
+        <span style="color:#f92672">&lt;execution&gt;</span>
+            <span style="color:#f92672">&lt;id&gt;</span>install node and npm<span style="color:#f92672">&lt;/id&gt;</span>
+            <span style="color:#f92672">&lt;goals&gt;</span>
+                <span style="color:#f92672">&lt;goal&gt;</span>install-node-and-npm<span style="color:#f92672">&lt;/goal&gt;</span>
+            <span style="color:#f92672">&lt;/goals&gt;</span>
+        <span style="color:#f92672">&lt;/execution&gt;</span>
+
+        <span style="color:#75715e">&lt;!-- Install all project dependencies --&gt;</span>
+        <span style="color:#f92672">&lt;execution&gt;</span>
+            <span style="color:#f92672">&lt;id&gt;</span>npm install<span style="color:#f92672">&lt;/id&gt;</span>
+            <span style="color:#f92672">&lt;phase&gt;</span>prepare-package<span style="color:#f92672">&lt;/phase&gt;</span>
+            <span style="color:#f92672">&lt;goals&gt;</span>
+                <span style="color:#f92672">&lt;goal&gt;</span>npm<span style="color:#f92672">&lt;/goal&gt;</span>
+            <span style="color:#f92672">&lt;/goals&gt;</span>
+            <span style="color:#f92672">&lt;configuration&gt;</span>
+                <span style="color:#f92672">&lt;arguments&gt;</span>install<span style="color:#f92672">&lt;/arguments&gt;</span>
+            <span style="color:#f92672">&lt;/configuration&gt;</span>
+        <span style="color:#f92672">&lt;/execution&gt;</span>
+
+        <span style="color:#75715e">&lt;!-- Build and minify static files --&gt;</span>
+        <span style="color:#f92672">&lt;execution&gt;</span>
+            <span style="color:#f92672">&lt;id&gt;</span>npm run build<span style="color:#f92672">&lt;/id&gt;</span>
+          	<span style="color:#f92672">&lt;phase&gt;</span>prepare-package<span style="color:#f92672">&lt;/phase&gt;</span>
+            <span style="color:#f92672">&lt;goals&gt;</span>
+                <span style="color:#f92672">&lt;goal&gt;</span>npm<span style="color:#f92672">&lt;/goal&gt;</span>
+            <span style="color:#f92672">&lt;/goals&gt;</span>
+            <span style="color:#f92672">&lt;configuration&gt;</span>
+                <span style="color:#f92672">&lt;arguments&gt;</span>run build<span style="color:#f92672">&lt;/arguments&gt;</span>
+            <span style="color:#f92672">&lt;/configuration&gt;</span>
+        <span style="color:#f92672">&lt;/execution&gt;</span>
+
+    <span style="color:#f92672">&lt;/executions&gt;</span>
+<span style="color:#f92672">&lt;/plugin&gt;</span></code></pre></div></article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/hello-world-example/JavaScript/edit/master/HuGo/content/docs/frontend-maven-plugin.md" target="_blank" rel="noopener">
+      <img src="/JavaScript/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#frontend-maven-plugin">frontend-maven-plugin</a>
+<ul>
+<li><a href="#npm-示例">NPM 示例</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>

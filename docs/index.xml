@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on JavaScript</title>
+    <title>JavaScript</title>
     <link>https://hello-world-example.github.io/JavaScript/</link>
-    <description>Recent content in Introduction on JavaScript</description>
+    <description>Recent content on JavaScript</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="https://hello-world-example.github.io/JavaScript/index.xml" rel="self" type="application/rss+xml" />
@@ -15,49 +15,59 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hello-world-example.github.io/JavaScript/_sidebar/</guid>
-      <description> 简介
- 示例
- 默认带目录 设置不带目录 特有功能
-   </description>
+      <description> Npm  npm 快速入门 package.json 常用命令 常见问题  Yarn    Vue    Element UI    Vue Element Admin    frontend-maven-plugin  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/hidden/</link>
+      <link>https://hello-world-example.github.io/JavaScript/docs/frontend-maven-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/hidden/</guid>
-      <description>This page is hidden in menu Quondam non pater est dignior ille Eurotas Latent te facies Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
- Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor  Cum honorum Latona O fallor in sustinui iussorum equidem.</description>
+      <guid>https://hello-world-example.github.io/JavaScript/docs/frontend-maven-plugin/</guid>
+      <description>frontend-maven-plugin   官网 ： https://github.com/eirslett/frontend-maven-plugin   NPM 示例 &amp;lt;!-- https://github.com/eirslett/frontend-maven-plugin#usage --&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;com.github.eirslett&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;frontend-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;workingDirectory&amp;gt;${project.basedir}/src/main/resources/node&amp;lt;/workingDirectory&amp;gt; &amp;lt;!-- Latest LTS Version: 12.13.0 (includes npm 6.12.0) --&amp;gt; &amp;lt;!-- 文档 : http://npm.taobao.org/mirrors/node/v12.13.0/docs/api/index.html --&amp;gt; &amp;lt;nodeVersion&amp;gt;v12.13.0&amp;lt;/nodeVersion&amp;gt; &amp;lt;!-- 默认 : https://nodejs.org/dist/ --&amp;gt; &amp;lt;nodeDownloadRoot&amp;gt;https://npm.taobao.org/mirrors/node/&amp;lt;/nodeDownloadRoot&amp;gt; &amp;lt;!-- 包下载地址，默认：https://registry.npmjs.org/npm/-/ --&amp;gt; &amp;lt;npmDownloadRoot&amp;gt;https://registry.npm.taobao.org/&amp;lt;/npmDownloadRoot&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;executions&amp;gt; &amp;lt;!-- 安装 node 和 npm --&amp;gt; &amp;lt;execution&amp;gt; &amp;lt;id&amp;gt;install node and npm&amp;lt;/id&amp;gt; &amp;lt;goals&amp;gt; &amp;lt;goal&amp;gt;install-node-and-npm&amp;lt;/goal&amp;gt; &amp;lt;/goals&amp;gt; &amp;lt;/execution&amp;gt; &amp;lt;!-- Install all project dependencies --&amp;gt; &amp;lt;execution&amp;gt; &amp;lt;id&amp;gt;npm install&amp;lt;/id&amp;gt; &amp;lt;phase&amp;gt;prepare-package&amp;lt;/phase&amp;gt; &amp;lt;goals&amp;gt; &amp;lt;goal&amp;gt;npm&amp;lt;/goal&amp;gt; &amp;lt;/goals&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;arguments&amp;gt;install&amp;lt;/arguments&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;/execution&amp;gt; &amp;lt;!</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/shortcodes/</link>
+      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/Command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/shortcodes/</guid>
-      <description>各种样式 折叠 Default {{&amp;lt; expand &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /expand &amp;gt;}}  Expand ↕  Markdown content Lorem markdownum insigne&amp;hellip;    With Custom Label {{&amp;lt; expand &amp;#34;Custom Label&amp;#34; &amp;#34;...&amp;#34; &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /expand &amp;gt;}}  Custom Label ...  Markdown content Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes.</description>
+      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/Command/</guid>
+      <description>常用命令 npm 参数 # 查看各个命令的简单用法 ᐅ npm -l npm help 查看命令帮助 ᐅ npm help Usage: npm &amp;lt;command&amp;gt; where &amp;lt;command&amp;gt; is one of: access, adduser, audit, bin, bugs, c, cache, ci, cit, clean-install, clean-install-test, completion, config, create, ddp, dedupe, deprecate, dist-tag, docs, doctor, edit, explore, fund, get, help, help-search, hook, i, init, install, install-ci-test, install-test, it, link, list, ln, login, logout, ls, org, outdated, owner, pack, ping, prefix, profile, prune, publish, rb, rebuild, repo, restart, root, run, run-script, s, se, search, set, shrinkwrap, star, stars, start, stop, t, team, test, token, tst, un, uninstall, unpublish, unstar, up, update, v, version, view, whoami npm &amp;lt;command&amp;gt; -h quick help on &amp;lt;command&amp;gt; npm -l display full usage info npm help &amp;lt;term&amp;gt; search for help on &amp;lt;term&amp;gt; npm help npm involved overview Specify configs in the ini-formatted file: /Users/kail/.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/with-toc/</link>
+      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/FAQ/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/with-toc/</guid>
-      <description>默认带导航 Cognita laeva illo fracta Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
- Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit  Natus quaerere Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
+      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/FAQ/</guid>
+      <description>常见问题 使用国内镜像  npm registry 管理： https://www.jianshu.com/p/2f532f8f2e19
+ # 安装「npm install -g nrm --registry=https://registry.npm.taobao.org」 ᐅ npm install -g nrm # 查看支持的镜像 ᐅ nrm ls npm -------- https://registry.npmjs.org/ yarn ------- https://registry.yarnpkg.com/ cnpm ------- http://r.cnpmjs.org/ taobao ----- https://registry.npm.taobao.org/ nj --------- https://registry.nodejitsu.com/ npmMirror -- https://skimdb.npmjs.com/registry/ edunpm ----- http://registry.enpmjs.org/ # 切换为 淘宝镜像 ᐅ nrm use taobao Registry has been set to: https://registry.npm.taobao.org/ # 查看效果 ᐅ npm config get registry https://registry.npm.taobao.org/ 权限问题  处理npm权限问题 ： https://www.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/without-toc/</link>
+      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/Package.json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/without-toc/</guid>
-      <description>不使用导航 Tanto oblite Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
-Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
+      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/Package.json/</guid>
+      <description>package.json 管理本地安装 npm 包的最好方式就是创建 package.json 文件。
+创建 package.json # 输入之后开始交互式操作，按提示进行即可 ᐅ npm init # 直接生成默认的 package.json，之后修改文件 ᐅ npm init --yes package.json 内容  ! name：项目名。全部小写，没有空格，可以使用下划线或者横线 ! version：x.x.x 格式的版本号 description：描述信息，有助于搜索，如果没定义，npm 使用项目中的 README.md 的第一行 main: 入口文件，一般都是 index.js scripts：支持的脚本，默认是一个空的 test keywords：关键字，有助于在人们使用 npm search 搜索时发现你的项目 author：作者信息 license：默认是 MIT bugs：当前项目的一些错误信息，如果有的话  可以为 init 命令设置一些默认值，比如：
+ᐅ npm set init.author.name &amp;quot;kail&amp;quot; ᐅ npm set init.license &amp;quot;MIT&amp;quot;  版本依赖  devDependencies：在开发、测试环境中用到的依赖 dependencies：在生产环境中需要用到的依赖  npm install 默认会安装 package.json 中 dependencies 和 devDependencies 里的所有模块。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/Quick-Start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/Quick-Start/</guid>
+      <description>npm 快速入门   npm 官网：https://www.npmjs.com/ npm 中文文档： https://www.npmjs.cn/  快速入门    简介 NPM（Node Package Manager）
+ 查找包：https://www.npmjs.com/search?q=qrcode  安装 Node &amp;amp; npm  Node 官网：https://nodejs.org/en/download/
+目前新版 Node，内置 npm 「 Latest LTS Version: 12.13.1 (includes npm 6.12.1) 」
+安装过程 “点点点” 即可
+ # Node 版本 ᐅ node -v v12.13.1 # npm 版本 ᐅ npm -v 6.12.1 # 使用帮助 ᐅ npm help Usage: npm &amp;lt;command&amp;gt; where &amp;lt;command&amp;gt; is one of: access, adduser, audit, bin, bugs, c, cache, ci, cit, clean-install, clean-install-test, completion, config, create, ddp, dedupe, deprecate, dist-tag, docs, doctor, edit, explore, get, help, help-search, hook, i, init, install, install-ci-test, install-test, it, link, list, ln, login, logout, ls, org, outdated, owner, pack, ping, prefix, profile, prune, publish, rb, rebuild, repo, restart, root, run, run-script, s, se, search, set, shrinkwrap, star, stars, start, stop, t, team, test, token, tst, un, uninstall, unpublish, unstar, up, update, v, version, view, whoami npm &amp;lt;command&amp;gt; -h quick help on &amp;lt;command&amp;gt; npm -l display full usage info npm help &amp;lt;term&amp;gt; search for help on &amp;lt;term&amp;gt; npm help npm involved overview Specify configs in the ini-formatted file: /Users/kail/.</description>
     </item>
     
   </channel>

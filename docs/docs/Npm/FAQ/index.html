@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F a Q | JavaScript</title>
+
+
+<link rel="stylesheet" href="/JavaScript/book.min.79de1f7861b0c98f453c0a93bebf3608a280809e417787746c373699639900d7.css">
+
+
+
+
+<link rel="icon" href="/JavaScript/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://hello-world-example.github.io/JavaScript/">JavaScript</a>
+</h2>
+
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fJavaScript\2f docs\2fNpm\2f FAQ\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><strong>Npm</strong>
+
+<ul>
+<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速入门</a></li>
+<li><a href="/JavaScript/docs/Npm/Package.json/">package.json</a></li>
+<li><a href="/JavaScript/docs/Npm/Command/">常用命令</a></li>
+<li><a href="/JavaScript/docs/Npm/FAQ/">常见问题</a></li>
+</ul></li>
+<li><strong>Yarn</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Vue</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Element UI</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Vue Element Admin</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><a href="/JavaScript/docs/frontend-maven-plugin/">frontend-maven-plugin</a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/JavaScript/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>F a Q</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="常见问题">常见问题</h1>
+
+<h2 id="使用国内镜像">使用国内镜像</h2>
+
+<blockquote>
+<p>npm registry 管理： <a href="https://www.jianshu.com/p/2f532f8f2e19">https://www.jianshu.com/p/2f532f8f2e19</a></p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 安装「npm install -g nrm --registry=https://registry.npm.taobao.org」</span>
+ᐅ npm install -g nrm
+
+<span style="color:#75715e"># 查看支持的镜像</span>
+ᐅ nrm ls
+  npm -------- https://registry.npmjs.org/
+  yarn ------- https://registry.yarnpkg.com/
+  cnpm ------- http://r.cnpmjs.org/
+  taobao ----- https://registry.npm.taobao.org/
+  nj --------- https://registry.nodejitsu.com/
+  npmMirror -- https://skimdb.npmjs.com/registry/
+  edunpm ----- http://registry.enpmjs.org/
+  
+<span style="color:#75715e"># 切换为 淘宝镜像</span>
+ᐅ nrm use taobao
+   Registry has been set to: https://registry.npm.taobao.org/
+
+<span style="color:#75715e"># 查看效果</span>
+ᐅ npm config get registry
+https://registry.npm.taobao.org/</code></pre></div>
+<h2 id="权限问题">权限问题</h2>
+
+<blockquote>
+<p>处理npm权限问题 ： <a href="https://www.kancloud.cn/shellway/npm-doc/199985">https://www.kancloud.cn/shellway/npm-doc/199985</a></p>
+
+<p>这里使用第二种方法</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 查看 npm 的目录路径</span>
+ᐅ npm config get prefix
+/usr/local
+
+<span style="color:#75715e"># 为 npm 设置新路径</span>
+ᐅ mkdir ~/.npm-global
+ᐅ npm config set prefix <span style="color:#e6db74">&#39;/Users/kail/.npm-global&#39;</span>
+<span style="color:#75715e"># 追加 export PATH=&#34;$PATH:/Users/kail/.npm-global/bin&#34;</span>
+ᐅ sudo vim /etc/profile
+ᐅ source /etc/profile
+
+<span style="color:#75715e"># 测试效果</span>
+ᐅ npm install -g npm
+ᐅ npm install -g --force npx
+ᐅ npm ls -g --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>       
+/Users/kail/.npm-global/lib
+├── npm@6.13.4
+└── npx@10.2.0
+
+<span style="color:#75715e"># 删除原有 node_modules</span>
+ᐅ sudo rm -rf /usr/local/lib/node_modules</code></pre></div></article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/hello-world-example/JavaScript/edit/master/HuGo/content/docs/Npm/FAQ.md" target="_blank" rel="noopener">
+      <img src="/JavaScript/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#常见问题">常见问题</a>
+<ul>
+<li><a href="#使用国内镜像">使用国内镜像</a></li>
+<li><a href="#权限问题">权限问题</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>

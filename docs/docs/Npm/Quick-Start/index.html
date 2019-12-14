@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Start | JavaScript</title>
+
+
+<link rel="stylesheet" href="/JavaScript/book.min.79de1f7861b0c98f453c0a93bebf3608a280809e417787746c373699639900d7.css">
+
+
+
+
+<link rel="icon" href="/JavaScript/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://hello-world-example.github.io/JavaScript/">JavaScript</a>
+</h2>
+
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fJavaScript\2f docs\2fNpm\2fQuick-Start\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><strong>Npm</strong>
+
+<ul>
+<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速入门</a></li>
+<li><a href="/JavaScript/docs/Npm/Package.json/">package.json</a></li>
+<li><a href="/JavaScript/docs/Npm/Command/">常用命令</a></li>
+<li><a href="/JavaScript/docs/Npm/FAQ/">常见问题</a></li>
+</ul></li>
+<li><strong>Yarn</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Vue</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Element UI</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Vue Element Admin</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><a href="/JavaScript/docs/frontend-maven-plugin/">frontend-maven-plugin</a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/JavaScript/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>Quick Start</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="npm-快速入门">npm 快速入门</h1>
+
+<blockquote>
+<ul>
+<li>npm 官网：<a href="https://www.npmjs.com/">https://www.npmjs.com/</a></li>
+<li>npm 中文文档： <a href="https://www.npmjs.cn/">https://www.npmjs.cn/</a>
+
+<ul>
+<li><a href="https://www.npmjs.cn/getting-started/what-is-npm/">快速入门</a></li>
+</ul></li>
+</ul>
+</blockquote>
+
+<h2 id="简介">简介</h2>
+
+<p>NPM（Node Package Manager）</p>
+
+<ul>
+<li>查找包：<a href="https://www.npmjs.com/search?q=qrcode">https://www.npmjs.com/search?q=qrcode</a></li>
+</ul>
+
+<h2 id="安装-node-npm">安装 Node &amp; npm</h2>
+
+<blockquote>
+<p>Node 官网：<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+
+<p>目前新版 Node，内置 npm 「 Latest LTS Version: <strong>12.13.1</strong> (includes npm 6.12.1) 」</p>
+
+<p>安装过程 “点点点” 即可</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Node 版本</span>
+ᐅ node -v
+v12.13.1
+<span style="color:#75715e"># npm 版本</span>
+ᐅ npm -v
+<span style="color:#ae81ff">6</span>.12.1
+
+<span style="color:#75715e"># 使用帮助</span>
+ᐅ npm help
+
+Usage: npm &lt;command&gt;
+
+where &lt;command&gt; is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm &lt;command&gt; -h  quick help on &lt;command&gt;
+npm -l            display full usage info
+npm help &lt;term&gt;   search <span style="color:#66d9ef">for</span> help on &lt;term&gt;
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    /Users/kail/.npmrc
+or on the command line via: npm &lt;command&gt; --key value
+Config info can be viewed via: npm help config
+
+npm@6.12.1 /usr/local/lib/node_modules/npm</code></pre></div>
+<h2 id="nvm-管理-node-npm-版本">* nvm 管理 Node &amp; npm 版本</h2>
+
+<blockquote>
+<p>官网：<a href="https://github.com/nvm-sh/nvm/">https://github.com/nvm-sh/nvm/</a></p>
+</blockquote>
+
+<h2 id="常用命令">常用命令</h2>
+
+<h3 id="install">install</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 本地安装</span>
+ᐅ npm install &lt;package-name&gt;@&lt;version&gt;
+<span style="color:#75715e"># 全局安装</span>
+ᐅ npm install -g &lt;package-name&gt;@&lt;version&gt;
+
+<span style="color:#75715e"># 表示将这个包名及对应的版本添加到 package.json 的 dependencies</span>
+ᐅ npm install &lt;package-name&gt; --save 
+<span style="color:#75715e"># 表示将这个包名及对应的版本添加到 package.json 的 devDependencies</span>
+ᐅ npm install &lt;package-name&gt; --save-dev 
+
+<span style="color:#75715e"># 查看 package.json 中定义的依赖是否有新版本</span>
+ᐅ npm outdated
+<span style="color:#75715e"># 更新指定依赖</span>
+ᐅ npm update &lt;package-name&gt;
+
+<span style="color:#75715e"># 查看使用帮助</span>
+ᐅ npm help install</code></pre></div>
+<h3 id="uninstall">uninstall</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 卸载一个依赖</span>
+ᐅ npm uninstall &lt;package-name&gt;</code></pre></div></article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/hello-world-example/JavaScript/edit/master/HuGo/content/docs/Npm/Quick-Start.md" target="_blank" rel="noopener">
+      <img src="/JavaScript/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#npm-快速入门">npm 快速入门</a>
+<ul>
+<li><a href="#简介">简介</a></li>
+<li><a href="#安装-node-npm">安装 Node &amp; npm</a></li>
+<li><a href="#nvm-管理-node-npm-版本">* nvm 管理 Node &amp; npm 版本</a></li>
+<li><a href="#常用命令">常用命令</a>
+<ul>
+<li><a href="#install">install</a></li>
+<li><a href="#uninstall">uninstall</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>

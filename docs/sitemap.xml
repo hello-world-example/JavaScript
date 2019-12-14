@@ -8,28 +8,32 @@
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/hidden/</loc>
-    <lastmod>2019-12-14T16:35:01+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/shortcodes/</loc>
+    <loc>https://hello-world-example.github.io/JavaScript/docs/frontend-maven-plugin/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/with-toc/</loc>
+    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/Command/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/without-toc/</loc>
-    <lastmod>2019-12-14T16:35:01+08:00</lastmod>
+    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/FAQ/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/Package.json/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/Quick-Start/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hello-world-example.github.io/JavaScript/docs/</loc>
-    <lastmod>2019-12-14T16:35:01+08:00</lastmod>
   </url>
   
   <url>
