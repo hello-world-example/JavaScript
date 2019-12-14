@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hello-world-example.github.io/JavaScript/_sidebar/</guid>
-      <description> Npm  npm 快速入门 package.json 常用命令 常见问题  Yarn    Vue    Element UI    Vue Element Admin    frontend-maven-plugin  </description>
+      <description> Npm  npm 快速入门 package.json 常用命令 常见问题  Yarn    Vue  数据的双向绑定原理   Element UI    Vue Element Admin    frontend-maven-plugin  </description>
     </item>
     
     <item>
@@ -68,6 +68,17 @@
 目前新版 Node，内置 npm 「 Latest LTS Version: 12.13.1 (includes npm 6.12.1) 」
 安装过程 “点点点” 即可
  # Node 版本 ᐅ node -v v12.13.1 # npm 版本 ᐅ npm -v 6.12.1 # 使用帮助 ᐅ npm help Usage: npm &amp;lt;command&amp;gt; where &amp;lt;command&amp;gt; is one of: access, adduser, audit, bin, bugs, c, cache, ci, cit, clean-install, clean-install-test, completion, config, create, ddp, dedupe, deprecate, dist-tag, docs, doctor, edit, explore, get, help, help-search, hook, i, init, install, install-ci-test, install-test, it, link, list, ln, login, logout, ls, org, outdated, owner, pack, ping, prefix, profile, prune, publish, rb, rebuild, repo, restart, root, run, run-script, s, se, search, set, shrinkwrap, star, stars, start, stop, t, team, test, token, tst, un, uninstall, unpublish, unstar, up, update, v, version, view, whoami npm &amp;lt;command&amp;gt; -h quick help on &amp;lt;command&amp;gt; npm -l display full usage info npm help &amp;lt;term&amp;gt; search for help on &amp;lt;term&amp;gt; npm help npm involved overview Specify configs in the ini-formatted file: /Users/kail/.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hello-world-example.github.io/JavaScript/docs/Vue/Data-Binding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hello-world-example.github.io/JavaScript/docs/Vue/Data-Binding/</guid>
+      <description>数据双向绑定原理  Object.defineProperty(obj, prop, descriptor) 可以在对象上定义新属性，或者修改现有属性
+ 常规方式 页面 &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;Hello&amp;lt;/h1&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;a&amp;#34; /&amp;gt; js var title = document.getElementById(&amp;#34;title&amp;#34;); var input = document.getElementById(&amp;#34;a&amp;#34;), // 监听 input 输入事件，修改 h1 标签内容 input.oninput = function (e) { title.innerHTML = this.value; }; // 修改 input 数据的时候，需要同时修改 h1 标签内容 input.value = &amp;#39;123&amp;#39;; title.innerHTML = input.value;  “数据绑定“ 之后 数据绑定实际上是重写 数据对象 的 get/set 方法，修改其默认行为
+Object.defineProperty(input, &amp;#39;val&amp;#39;, { //这里必须定义一个新的属性名称，不可以用 value，否则会报错。  get: function () { return this.</description>
     </item>
     
   </channel>
