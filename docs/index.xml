@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hello-world-example.github.io/JavaScript/_sidebar/</guid>
-      <description> Npm  npm 快速入门 package.json 常用命令 常见问题  Yarn    Vue  数据的双向绑定原理  Element UI    Vue Element Admin    frontend-maven-plugin  </description>
+      <description> Npm  npm 快速入门 package.json 常用命令 常见问题  Yarn    Vue  数据的双向绑定原理 Vue-Cli 快速入门  Element UI    Vue Element Admin    frontend-maven-plugin  </description>
     </item>
     
     <item>
@@ -79,6 +79,17 @@
       <description>数据双向绑定原理  Object.defineProperty(obj, prop, descriptor) 可以在对象上定义新属性，或者修改现有属性
  常规方式 页面 &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;Hello&amp;lt;/h1&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;a&amp;#34; /&amp;gt; js var title = document.getElementById(&amp;#34;title&amp;#34;); var input = document.getElementById(&amp;#34;a&amp;#34;), // 监听 input 输入事件，修改 h1 标签内容 input.oninput = function (e) { title.innerHTML = this.value; }; // 修改 input 数据的时候，需要同时修改 h1 标签内容 input.value = &amp;#39;123&amp;#39;; title.innerHTML = input.value;  “数据绑定“ 之后 数据绑定实际上是重写 数据对象 的 get/set 方法，修改其默认行为
 Object.defineProperty(input, &amp;#39;val&amp;#39;, { //这里必须定义一个新的属性名称，不可以用 value，否则会报错。  get: function () { return this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hello-world-example.github.io/JavaScript/docs/Vue/Vue-Cli-Quick-Start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hello-world-example.github.io/JavaScript/docs/Vue/Vue-Cli-Quick-Start/</guid>
+      <description> Vue-Cli 快速入门  官方文档： https://cli.vuejs.org/zh/
+ 安装 ᐅ npm install -g @vue/cli # 检查是否安装正确 ᐅ vue --version @vue/cli 4.1.1 ᐅ npm install -g @vue/cli-service-global hello-world # 创建一个 hello-world 项目 ᐅ vue create hello-world ᐅ cd hello-world ᐅ npm run serve # 详情查看 hello-world/README.md 单独查看组件 # 查看整个应用 ᐅ vue serve src/App.vue # 查看 HelloWorld 组件 ᐅ vue serve src/components/HelloWorld.vue vue ui 图形化界面创建项目  如果本地无法测试，可以从官网查看效果
+ ᐅ vue ui Read More  官方文档 创建一个项目  </description>
     </item>
     
   </channel>

@@ -72,5 +72,16 @@
 Object.defineProperty(input, &amp;#39;val&amp;#39;, { //这里必须定义一个新的属性名称，不可以用 value，否则会报错。  get: function () { return this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://hello-world-example.github.io/JavaScript/docs/Vue/Vue-Cli-Quick-Start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hello-world-example.github.io/JavaScript/docs/Vue/Vue-Cli-Quick-Start/</guid>
+      <description> Vue-Cli 快速入门  官方文档： https://cli.vuejs.org/zh/
+ 安装 ᐅ npm install -g @vue/cli # 检查是否安装正确 ᐅ vue --version @vue/cli 4.1.1 ᐅ npm install -g @vue/cli-service-global hello-world # 创建一个 hello-world 项目 ᐅ vue create hello-world ᐅ cd hello-world ᐅ npm run serve # 详情查看 hello-world/README.md 单独查看组件 # 查看整个应用 ᐅ vue serve src/App.vue # 查看 HelloWorld 组件 ᐅ vue serve src/components/HelloWorld.vue vue ui 图形化界面创建项目  如果本地无法测试，可以从官网查看效果
+ ᐅ vue ui Read More  官方文档 创建一个项目  </description>
+    </item>
+    
   </channel>
 </rss>

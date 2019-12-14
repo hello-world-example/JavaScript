@@ -67,6 +67,7 @@ https://github.com/alex-shpak/hugo-book
 
 <ul>
 <li><a href="/JavaScript/docs/Vue/Data-Binding/">数据的双向绑定原理</a></li>
+<li><a href="/JavaScript/docs/Vue/Vue-Cli-Quick-Start/">Vue-Cli 快速入门</a></li>
 </ul></li>
 <li><strong>Element UI</strong>
 
@@ -184,7 +185,27 @@ npm@6.12.1 /usr/local/lib/node_modules/npm</code></pre></div>
 <blockquote>
 <p>官网：<a href="https://github.com/nvm-sh/nvm/">https://github.com/nvm-sh/nvm/</a></p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ᐅ git clone https://gitee.com/mirrors/nvm.git ~/.nvm
+ᐅ cd .nvm
+ᐅ git remote set-url origin https://github.com/nvm-sh/nvm.git
+ᐅ git pull
+ᐅ git checkout <span style="color:#e6db74">`</span>git describe --abbrev<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> --tags<span style="color:#e6db74">`</span>
 
+<span style="color:#75715e"># 编辑 /etc/profile，追加已下代码</span>
+ᐅ sudo vim /etc/profile
+export NVM_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span><span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CONFIG_HOME-<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> printf %s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/.nvm&#34;</span> <span style="color:#f92672">||</span> printf %s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CONFIG_HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/nvm&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">[</span> -s <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\.</span> <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#75715e"># This loads nvm</span>
+ᐅ source /etc/profile
+
+<span style="color:#75715e"># 查看有哪些可用版本</span>
+ᐅ nvm ls-remote --lts
+<span style="color:#75715e"># v8.16.2 (Latest LTS: Carbon)</span>
+ᐅ nvm install v8.16.2
+ᐅ 
+ᐅ 
+ᐅ 
+ᐅ 
+ᐅ </code></pre></div>
 <h2 id="常用命令">常用命令</h2>
 
 <h3 id="install">install</h3>
@@ -214,7 +235,7 @@ npm@6.12.1 /usr/local/lib/node_modules/npm</code></pre></div>
   
   <div>
     
-    <a href="https://github.com/hello-world-example/JavaScript/commit/447a36e5b553f0ed1798595198bb3960d040327e" title='Last modified Dec 14, 2019 by 杨凯彬' target="_blank" rel="noopener">
+    <a href="https://github.com/hello-world-example/JavaScript/commit/f1fd0df4cfb0747b8eec11ac38c3b685ea31ed1a" title='Last modified Dec 14, 2019 by 杨凯彬' target="_blank" rel="noopener">
       <img src="/JavaScript/svg/calendar.svg" alt="Changed" /> Dec 14, 2019
     </a>
   </div>
