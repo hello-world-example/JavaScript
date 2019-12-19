@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N v M | JavaScript</title>
+
+
+<link rel="stylesheet" href="/JavaScript/book.min.79de1f7861b0c98f453c0a93bebf3608a280809e417787746c373699639900d7.css">
+
+
+
+
+<link rel="icon" href="/JavaScript/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://hello-world-example.github.io/JavaScript/">JavaScript</a>
+</h2>
+
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fJavaScript\2f docs\2fNpm\2fNVM\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><strong>Npm</strong>
+
+<ul>
+<li><a href="/JavaScript/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
+<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速开始</a></li>
+<li><a href="/JavaScript/docs/Npm/Package.json/">package.json</a></li>
+<li><a href="/JavaScript/docs/Npm/Command/">常用命令</a></li>
+<li><a href="/JavaScript/docs/Npm/FAQ/">常见问题</a></li>
+</ul></li>
+<li><strong>Yarn</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Vue</strong>
+
+<ul>
+<li><a href="/JavaScript/docs/Vue/Data-Binding/">数据的双向绑定原理</a></li>
+<li><a href="/JavaScript/docs/Vue/Vue-Cli-Quick-Start/">Vue-Cli 快速入门</a></li>
+</ul></li>
+<li><strong>Element UI</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><strong>Vue Element Admin</strong>
+
+<ul>
+<li></li>
+</ul></li>
+<li><a href="/JavaScript/docs/frontend-maven-plugin/">frontend-maven-plugin</a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/JavaScript/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>N v M</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="nvm-管理-node-版本">nvm 管理 Node 版本</h1>
+
+<blockquote>
+<p>如果使用 nvm 管理 node 版本，需要先卸载已经安装的 node 和 npm，否则切换版本的时候可能会报一下错误：</p>
+
+<blockquote>
+<p>nvm is not compatible with the npm config &ldquo;prefix&rdquo; option: currently set to &ldquo;xxx&rdquo;</p>
+</blockquote>
+</blockquote>
+
+<h2 id="卸载已安装的-node-npm">卸载已安装的 node &amp; npm</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 查看已经安装在全局的模块，便于重新安装</span>
+ᐅ npm ls -g --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+└── xxx
+
+<span style="color:#75715e"># 删除 node</span>
+ᐅ sudo rm /usr/local/bin/node
+ᐅ sudo rm /usr/local/bin/npm
+ᐅ sudo rm /usr/local/bin/npx
+ᐅ sudo rm -rf /usr/local/lib/node_modules
+
+ᐅ rm ~/.npmrc
+ᐅ rm ~/.nrmrc
+ᐅ rm -rf ~/.npm
+ᐅ rm -rf ~/.node-gyp
+ᐅ rm -rf ~/.npm-global</code></pre></div>
+<h2 id="官方安装方式">官方安装方式</h2>
+
+<blockquote>
+<p>官网：<a href="https://github.com/nvm-sh/nvm/">https://github.com/nvm-sh/nvm/</a></p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ᐅ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</code></pre></div>
+<h2 id="手动安装方式">手动安装方式</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ᐅ git clone https://gitee.com/mirrors/nvm.git ~/.nvm
+ᐅ cd ~/.nvm
+ᐅ git remote set-url origin https://github.com/nvm-sh/nvm.git
+ᐅ git pull
+ᐅ git checkout <span style="color:#e6db74">`</span>git describe --abbrev<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> --tags<span style="color:#e6db74">`</span>
+
+<span style="color:#75715e"># 编辑 /etc/profile，追加已下代码</span>
+ᐅ sudo vim /etc/profile
+<span style="color:#75715e"># nvm</span>
+export NVM_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span><span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CONFIG_HOME-<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> printf %s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/.nvm&#34;</span> <span style="color:#f92672">||</span> printf %s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CONFIG_HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/nvm&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">[</span> -s <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\.</span> <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#75715e"># This loads nvm</span>
+<span style="color:#75715e"># nvm 国内镜像</span>
+export NVM_NODEJS_ORG_MIRROR<span style="color:#f92672">=</span>https://npm.taobao.org/mirrors/node
+
+ᐅ source /etc/profile</code></pre></div>
+<h2 id="使用-nvm">使用 nvm</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 查看有哪些可用版本</span>
+ᐅ nvm ls-remote --lts
+
+<span style="color:#75715e"># v8.17.0   (Latest LTS: Carbon)</span>
+ᐅ nvm install v8.17.0
+
+<span style="color:#75715e"># 查看本地版本</span>
+ᐅ nvm ls --no-alias
+
+<span style="color:#75715e"># 切换到指定版本</span>
+ᐅ nvm use v8.17.0
+
+<span style="color:#75715e"># 显示当前版本</span>
+ᐅ nvm current 
+
+<span style="color:#75715e"># 显示当前版本安装的全局包</span>
+ᐅ npm ls -g --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+/Users/kail/.nvm/versions/node/v8.17.0/lib
+└── npm@6.13.4</code></pre></div></article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/hello-world-example/JavaScript/edit/master/HuGo/content/docs/Npm/NVM.md" target="_blank" rel="noopener">
+      <img src="/JavaScript/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#nvm-管理-node-版本">nvm 管理 Node 版本</a>
+<ul>
+<li><a href="#卸载已安装的-node-npm">卸载已安装的 node &amp; npm</a></li>
+<li><a href="#官方安装方式">官方安装方式</a></li>
+<li><a href="#手动安装方式">手动安装方式</a></li>
+<li><a href="#使用-nvm">使用 nvm</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>

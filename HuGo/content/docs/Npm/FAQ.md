@@ -33,8 +33,12 @@ https://registry.npm.taobao.org/
 ## 权限问题
 
 > 处理npm权限问题 ： https://www.kancloud.cn/shellway/npm-doc/199985
->
-> 这里使用第二种方法
+
+### 1. 使用 nvm 包管理器
+
+> [nvm 管理 Node 版本]({{< relref "/docs/Npm/NVM.md" >}})
+
+### 2. 使用修改安装路径
 
 ```bash
 # 查看 npm 的目录路径
@@ -60,3 +64,7 @@ https://registry.npm.taobao.org/
 ᐅ sudo rm -rf /usr/local/lib/node_modules
 ```
 
+## xcrun 问题
+
+- `sudo xcode-select --install`
+- `sudo xcode-select -switch /`

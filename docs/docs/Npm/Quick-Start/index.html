@@ -53,7 +53,8 @@ https://github.com/alex-shpak/hugo-book
 <li><strong>Npm</strong>
 
 <ul>
-<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速入门</a></li>
+<li><a href="/JavaScript/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
+<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速开始</a></li>
 <li><a href="/JavaScript/docs/Npm/Package.json/">package.json</a></li>
 <li><a href="/JavaScript/docs/Npm/Command/">常用命令</a></li>
 <li><a href="/JavaScript/docs/Npm/FAQ/">常见问题</a></li>
@@ -114,7 +115,7 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown">
 
-<h1 id="npm-快速入门">npm 快速入门</h1>
+<h1 id="npm-快速开始">npm 快速开始</h1>
 
 <blockquote>
 <ul>
@@ -180,32 +181,6 @@ or on the command line via: npm &lt;command&gt; --key value
 Config info can be viewed via: npm help config
 
 npm@6.12.1 /usr/local/lib/node_modules/npm</code></pre></div>
-<h2 id="nvm-管理-node-npm-版本">* nvm 管理 Node &amp; npm 版本</h2>
-
-<blockquote>
-<p>官网：<a href="https://github.com/nvm-sh/nvm/">https://github.com/nvm-sh/nvm/</a></p>
-</blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ᐅ git clone https://gitee.com/mirrors/nvm.git ~/.nvm
-ᐅ cd .nvm
-ᐅ git remote set-url origin https://github.com/nvm-sh/nvm.git
-ᐅ git pull
-ᐅ git checkout <span style="color:#e6db74">`</span>git describe --abbrev<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> --tags<span style="color:#e6db74">`</span>
-
-<span style="color:#75715e"># 编辑 /etc/profile，追加已下代码</span>
-ᐅ sudo vim /etc/profile
-export NVM_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span><span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CONFIG_HOME-<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> printf %s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/.nvm&#34;</span> <span style="color:#f92672">||</span> printf %s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CONFIG_HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/nvm&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
-<span style="color:#f92672">[</span> -s <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\.</span> <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#75715e"># This loads nvm</span>
-ᐅ source /etc/profile
-
-<span style="color:#75715e"># 查看有哪些可用版本</span>
-ᐅ nvm ls-remote --lts
-<span style="color:#75715e"># v8.16.2 (Latest LTS: Carbon)</span>
-ᐅ nvm install v8.16.2
-ᐅ 
-ᐅ 
-ᐅ 
-ᐅ 
-ᐅ </code></pre></div>
 <h2 id="常用命令">常用命令</h2>
 
 <h3 id="install">install</h3>
@@ -259,11 +234,10 @@ export NVM_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#npm-快速入门">npm 快速入门</a>
+<li><a href="#npm-快速开始">npm 快速开始</a>
 <ul>
 <li><a href="#简介">简介</a></li>
 <li><a href="#安装-node-npm">安装 Node &amp; npm</a></li>
-<li><a href="#nvm-管理-node-npm-版本">* nvm 管理 Node &amp; npm 版本</a></li>
 <li><a href="#常用命令">常用命令</a>
 <ul>
 <li><a href="#install">install</a></li>

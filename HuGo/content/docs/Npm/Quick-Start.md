@@ -1,6 +1,6 @@
 
 
-# npm 快速入门
+# npm 快速开始
 
 > - npm 官网：https://www.npmjs.com/
 > - npm 中文文档： https://www.npmjs.cn/
@@ -58,36 +58,6 @@ Config info can be viewed via: npm help config
 
 npm@6.12.1 /usr/local/lib/node_modules/npm
 ```
-
-## * nvm 管理 Node & npm 版本
-
-> 官网：https://github.com/nvm-sh/nvm/
-
-```bash
-ᐅ git clone https://gitee.com/mirrors/nvm.git ~/.nvm
-ᐅ cd .nvm
-ᐅ git remote set-url origin https://github.com/nvm-sh/nvm.git
-ᐅ git pull
-ᐅ git checkout `git describe --abbrev=0 --tags`
-
-# 编辑 /etc/profile，追加已下代码
-ᐅ sudo vim /etc/profile
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-ᐅ source /etc/profile
-
-# 查看有哪些可用版本
-ᐅ nvm ls-remote --lts
-# v8.16.2 (Latest LTS: Carbon)
-ᐅ nvm install v8.16.2
-ᐅ 
-ᐅ 
-ᐅ 
-ᐅ 
-ᐅ 
-```
-
-
 
 ## 常用命令
 

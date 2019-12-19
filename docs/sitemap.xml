@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/NVM/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/Package.json/</loc>
     <priority>0</priority>
   </url>

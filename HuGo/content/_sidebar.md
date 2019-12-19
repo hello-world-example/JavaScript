@@ -3,7 +3,8 @@ headless: true
 ---
 
 - **Npm**
-  - [npm 快速入门]({{< relref "/docs/Npm/Quick-Start.md" >}})
+  - [nvm 管理 Node 版本]({{< relref "/docs/Npm/NVM.md" >}})
+  - [npm 快速开始]({{< relref "/docs/Npm/Quick-Start.md" >}})
   - [package.json]({{< relref "/docs/Npm/Package.json.md" >}})
   - [常用命令]({{< relref "/docs/Npm/Command.md" >}})
   - [常见问题]({{< relref "/docs/Npm/FAQ.md" >}})

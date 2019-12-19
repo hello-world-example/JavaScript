@@ -53,7 +53,8 @@ https://github.com/alex-shpak/hugo-book
 <li><strong>Npm</strong>
 
 <ul>
-<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速入门</a></li>
+<li><a href="/JavaScript/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
+<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速开始</a></li>
 <li><a href="/JavaScript/docs/Npm/Package.json/">package.json</a></li>
 <li><a href="/JavaScript/docs/Npm/Command/">常用命令</a></li>
 <li><a href="/JavaScript/docs/Npm/FAQ/">常见问题</a></li>
@@ -145,9 +146,15 @@ https://registry.npm.taobao.org/</code></pre></div>
 
 <blockquote>
 <p>处理npm权限问题 ： <a href="https://www.kancloud.cn/shellway/npm-doc/199985">https://www.kancloud.cn/shellway/npm-doc/199985</a></p>
-
-<p>这里使用第二种方法</p>
 </blockquote>
+
+<h3 id="1-使用-nvm-包管理器">1. 使用 nvm 包管理器</h3>
+
+<blockquote>
+<p><a href="/JavaScript/docs/Npm/NVM/">nvm 管理 Node 版本</a></p>
+</blockquote>
+
+<h3 id="2-使用修改安装路径">2. 使用修改安装路径</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 查看 npm 的目录路径</span>
 ᐅ npm config get prefix
 /usr/local
@@ -168,7 +175,14 @@ https://registry.npm.taobao.org/</code></pre></div>
 └── npx@10.2.0
 
 <span style="color:#75715e"># 删除原有 node_modules</span>
-ᐅ sudo rm -rf /usr/local/lib/node_modules</code></pre></div></article>
+ᐅ sudo rm -rf /usr/local/lib/node_modules</code></pre></div>
+<h2 id="xcrun-问题">xcrun 问题</h2>
+
+<ul>
+<li><code>sudo xcode-select --install</code></li>
+<li><code>sudo xcode-select -switch /</code></li>
+</ul>
+</article>
 
       
 <div class="book-footer justify-between">
@@ -202,7 +216,12 @@ https://registry.npm.taobao.org/</code></pre></div>
 <li><a href="#常见问题">常见问题</a>
 <ul>
 <li><a href="#使用国内镜像">使用国内镜像</a></li>
-<li><a href="#权限问题">权限问题</a></li>
+<li><a href="#权限问题">权限问题</a>
+<ul>
+<li><a href="#1-使用-nvm-包管理器">1. 使用 nvm 包管理器</a></li>
+<li><a href="#2-使用修改安装路径">2. 使用修改安装路径</a></li>
+</ul></li>
+<li><a href="#xcrun-问题">xcrun 问题</a></li>
 </ul></li>
 </ul>
 </nav>
