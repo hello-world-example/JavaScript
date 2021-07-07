@@ -1,59 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/_sidebar/</loc>
-    <lastmod>2019-12-14T23:57:53+08:00</lastmod>
+    <loc>https://hello-world-example.github.io/Node/_sidebar/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/frontend-maven-plugin/</loc>
-    <priority>0</priority>
+    <loc>https://hello-world-example.github.io/Node/docs/frontend-maven-plugin/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/Command/</loc>
-    <priority>0</priority>
+    <loc>https://hello-world-example.github.io/Node/docs/Npm/Command/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/FAQ/</loc>
-    <priority>0</priority>
+    <loc>https://hello-world-example.github.io/Node/docs/Npm/FAQ/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/NVM/</loc>
-    <priority>0</priority>
+    <loc>https://hello-world-example.github.io/Node/docs/Npm/NVM/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/Package.json/</loc>
-    <priority>0</priority>
+    <loc>https://hello-world-example.github.io/Node/docs/Npm/Package.json/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/Npm/Quick-Start/</loc>
-    <priority>0</priority>
+    <loc>https://hello-world-example.github.io/Node/docs/Npm/Quick-Start/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/Vue/Data-Binding/</loc>
-    <priority>0</priority>
+    <loc>https://hello-world-example.github.io/Node/docs/Tools/Axios/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/Vue/Vue-Cli-Quick-Start/</loc>
-    <priority>0</priority>
+    <loc>https://hello-world-example.github.io/Node/docs/Vue/Data-Binding/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/docs/</loc>
+    <loc>https://hello-world-example.github.io/Node/docs/Vue/Vue-Cli-Quick-Start/</loc>
   </url>
   
   <url>
-    <loc>https://hello-world-example.github.io/JavaScript/</loc>
-    <lastmod>2019-12-14T21:44:22+08:00</lastmod>
+    <loc>https://hello-world-example.github.io/Node/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hello-world-example.github.io/Node/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hello-world-example.github.io/Node/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hello-world-example.github.io/Node/tags/</loc>
   </url>
   
 </urlset>

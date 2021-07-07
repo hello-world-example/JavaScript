@@ -1,48 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docs on JavaScript</title>
-    <link>https://hello-world-example.github.io/JavaScript/docs/</link>
-    <description>Recent content in Docs on JavaScript</description>
+    <title>Docs on Node</title>
+    <link>https://hello-world-example.github.io/Node/docs/</link>
+    <description>Recent content in Docs on Node</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://hello-world-example.github.io/JavaScript/docs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hello-world-example.github.io/Node/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/frontend-maven-plugin/</link>
+      <link>https://hello-world-example.github.io/Node/docs/frontend-maven-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/frontend-maven-plugin/</guid>
+      <guid>https://hello-world-example.github.io/Node/docs/frontend-maven-plugin/</guid>
       <description>frontend-maven-plugin   官网 ： https://github.com/eirslett/frontend-maven-plugin   NPM 示例 &amp;lt;!-- https://github.com/eirslett/frontend-maven-plugin#usage --&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;com.github.eirslett&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;frontend-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;workingDirectory&amp;gt;${project.basedir}/src/main/resources/node&amp;lt;/workingDirectory&amp;gt; &amp;lt;!-- Latest LTS Version: 12.13.0 (includes npm 6.12.0) --&amp;gt; &amp;lt;!-- 文档 : http://npm.taobao.org/mirrors/node/v12.13.0/docs/api/index.html --&amp;gt; &amp;lt;nodeVersion&amp;gt;v12.13.0&amp;lt;/nodeVersion&amp;gt; &amp;lt;!-- 默认 : https://nodejs.org/dist/ --&amp;gt; &amp;lt;nodeDownloadRoot&amp;gt;https://npm.taobao.org/mirrors/node/&amp;lt;/nodeDownloadRoot&amp;gt; &amp;lt;!-- 包下载地址，默认：https://registry.npmjs.org/npm/-/ --&amp;gt; &amp;lt;npmDownloadRoot&amp;gt;https://registry.npm.taobao.org/&amp;lt;/npmDownloadRoot&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;executions&amp;gt; &amp;lt;!-- 安装 node 和 npm --&amp;gt; &amp;lt;execution&amp;gt; &amp;lt;id&amp;gt;install node and npm&amp;lt;/id&amp;gt; &amp;lt;goals&amp;gt; &amp;lt;goal&amp;gt;install-node-and-npm&amp;lt;/goal&amp;gt; &amp;lt;/goals&amp;gt; &amp;lt;/execution&amp;gt; &amp;lt;!-- Install all project dependencies --&amp;gt; &amp;lt;execution&amp;gt; &amp;lt;id&amp;gt;npm install&amp;lt;/id&amp;gt; &amp;lt;phase&amp;gt;prepare-package&amp;lt;/phase&amp;gt; &amp;lt;goals&amp;gt; &amp;lt;goal&amp;gt;npm&amp;lt;/goal&amp;gt; &amp;lt;/goals&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;arguments&amp;gt;install&amp;lt;/arguments&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;/execution&amp;gt; &amp;lt;!</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/Command/</link>
+      <link>https://hello-world-example.github.io/Node/docs/Npm/Command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/Command/</guid>
+      <guid>https://hello-world-example.github.io/Node/docs/Npm/Command/</guid>
       <description>常用命令 npm 参数 # 查看各个命令的简单用法 ᐅ npm -l npm help 查看命令帮助 ᐅ npm help Usage: npm &amp;lt;command&amp;gt; where &amp;lt;command&amp;gt; is one of: access, adduser, audit, bin, bugs, c, cache, ci, cit, clean-install, clean-install-test, completion, config, create, ddp, dedupe, deprecate, dist-tag, docs, doctor, edit, explore, fund, get, help, help-search, hook, i, init, install, install-ci-test, install-test, it, link, list, ln, login, logout, ls, org, outdated, owner, pack, ping, prefix, profile, prune, publish, rb, rebuild, repo, restart, root, run, run-script, s, se, search, set, shrinkwrap, star, stars, start, stop, t, team, test, token, tst, un, uninstall, unpublish, unstar, up, update, v, version, view, whoami npm &amp;lt;command&amp;gt; -h quick help on &amp;lt;command&amp;gt; npm -l display full usage info npm help &amp;lt;term&amp;gt; search for help on &amp;lt;term&amp;gt; npm help npm involved overview Specify configs in the ini-formatted file: /Users/kail/.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/FAQ/</link>
+      <link>https://hello-world-example.github.io/Node/docs/Npm/FAQ/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/FAQ/</guid>
+      <guid>https://hello-world-example.github.io/Node/docs/Npm/FAQ/</guid>
       <description>常见问题 使用国内镜像  npm registry 管理： https://www.jianshu.com/p/2f532f8f2e19
  # 安装「npm install -g nrm --registry=https://registry.npm.taobao.org」 ᐅ npm install -g nrm # 查看支持的镜像 ᐅ nrm ls npm -------- https://registry.npmjs.org/ yarn ------- https://registry.yarnpkg.com/ cnpm ------- http://r.cnpmjs.org/ taobao ----- https://registry.npm.taobao.org/ nj --------- https://registry.nodejitsu.com/ npmMirror -- https://skimdb.npmjs.com/registry/ edunpm ----- http://registry.enpmjs.org/ # 切换为 淘宝镜像 ᐅ nrm use taobao Registry has been set to: https://registry.npm.taobao.org/ # 查看效果 ᐅ npm config get registry https://registry.npm.taobao.org/ 权限问题  处理npm权限问题 ： https://www.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/NVM/</link>
+      <link>https://hello-world-example.github.io/Node/docs/Npm/NVM/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/NVM/</guid>
+      <guid>https://hello-world-example.github.io/Node/docs/Npm/NVM/</guid>
       <description>nvm 管理 Node 版本  如果使用 nvm 管理 node 版本，需要先卸载已经安装的 node 和 npm，否则切换版本的时候可能会报一下错误：
  nvm is not compatible with the npm config &amp;ldquo;prefix&amp;rdquo; option: currently set to &amp;ldquo;xxx&amp;rdquo;
   卸载已安装的 node &amp;amp; npm # 查看已经安装在全局的模块，便于重新安装 ᐅ npm ls -g --depth=0 └── xxx # 删除 node ᐅ sudo rm /usr/local/bin/node ᐅ sudo rm /usr/local/bin/npm ᐅ sudo rm /usr/local/bin/npx ᐅ sudo rm -rf /usr/local/lib/node_modules ᐅ rm ~/.npmrc ᐅ rm ~/.nrmrc ᐅ rm -rf ~/.</description>
@@ -50,22 +50,22 @@
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/Package.json/</link>
+      <link>https://hello-world-example.github.io/Node/docs/Npm/Package.json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/Package.json/</guid>
+      <guid>https://hello-world-example.github.io/Node/docs/Npm/Package.json/</guid>
       <description>package.json 管理本地安装 npm 包的最好方式就是创建 package.json 文件。
 创建 package.json # 输入之后开始交互式操作，按提示进行即可 ᐅ npm init # 直接生成默认的 package.json，之后修改文件 ᐅ npm init --yes package.json 内容  ! name：项目名。全部小写，没有空格，可以使用下划线或者横线 ! version：x.x.x 格式的版本号 description：描述信息，有助于搜索，如果没定义，npm 使用项目中的 README.md 的第一行 main: 入口文件，一般都是 index.js scripts：支持的脚本，默认是一个空的 test keywords：关键字，有助于在人们使用 npm search 搜索时发现你的项目 author：作者信息 license：默认是 MIT bugs：当前项目的一些错误信息，如果有的话  可以为 init 命令设置一些默认值，比如：
-ᐅ npm set init.author.name &amp;quot;kail&amp;quot; ᐅ npm set init.license &amp;quot;MIT&amp;quot;  版本依赖  devDependencies：在开发、测试环境中用到的依赖 dependencies：在生产环境中需要用到的依赖  npm install 默认会安装 package.json 中 dependencies 和 devDependencies 里的所有模块。</description>
+ᐅ npm set init.author.name &amp;quot;kail&amp;quot; ᐅ npm set init.license &amp;quot;MIT&amp;quot; 版本依赖  devDependencies：在开发、测试环境中用到的依赖 dependencies：在生产环境中需要用到的依赖  npm install 默认会安装 package.json 中 dependencies 和 devDependencies 里的所有模块。</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/Npm/Quick-Start/</link>
+      <link>https://hello-world-example.github.io/Node/docs/Npm/Quick-Start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/Npm/Quick-Start/</guid>
-      <description>npm 快速开始   npm 官网：https://www.npmjs.com/ npm 中文文档： https://www.npmjs.cn/  快速入门    简介 NPM（Node Package Manager）
+      <guid>https://hello-world-example.github.io/Node/docs/Npm/Quick-Start/</guid>
+      <description>npm 快速开始   npm 官网：https://www.npmjs.com/ npm 中文文档： https://www.npmjs.cn/   快速入门     简介 NPM（Node Package Manager）
  查找包：https://www.npmjs.com/search?q=qrcode  安装 Node &amp;amp; npm  Node 官网：https://nodejs.org/en/download/
 目前新版 Node，内置 npm 「 Latest LTS Version: 12.13.1 (includes npm 6.12.1) 」
 安装过程 “点点点” 即可
@@ -74,23 +74,32 @@
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/Vue/Data-Binding/</link>
+      <link>https://hello-world-example.github.io/Node/docs/Tools/Axios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/Vue/Data-Binding/</guid>
-      <description>数据双向绑定原理  Object.defineProperty(obj, prop, descriptor) 可以在对象上定义新属性，或者修改现有属性
- 常规方式 页面 &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;Hello&amp;lt;/h1&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;a&amp;#34; /&amp;gt; js var title = document.getElementById(&amp;#34;title&amp;#34;); var input = document.getElementById(&amp;#34;a&amp;#34;), // 监听 input 输入事件，修改 h1 标签内容 input.oninput = function (e) { title.innerHTML = this.value; }; // 修改 input 数据的时候，需要同时修改 h1 标签内容 input.value = &amp;#39;123&amp;#39;; title.innerHTML = input.value;  “数据绑定“ 之后 数据绑定实际上是重写 数据对象 的 get/set 方法，修改其默认行为
+      <guid>https://hello-world-example.github.io/Node/docs/Tools/Axios/</guid>
+      <description>Axios   官网：https://github.com/axios/axios 中文文档： https://www.kancloud.cn/yunye/axios/234845   基本语法结构 try&amp;hellip;catch&amp;hellip; axios.get(&amp;#39;/user?ID=12345&amp;#39;) .then(function (response) { ... }) .catch(function (error) { ... }); GET 参数 axios.get(&amp;#39;/user&amp;#39;, { params: { ID: 12345 } }) POST 参数 axios.post(&amp;#39;/user&amp;#39;, { firstName: &amp;#39;Fred&amp;#39;, lastName: &amp;#39;Flintstone&amp;#39; }) instance 参数 init var instance = axios.create({ baseURL: &amp;#39;https://some-domain.com/api/&amp;#39;, timeout: 1000, headers: { &amp;#39;X-Custom-Header&amp;#39;: &amp;#39;foobar&amp;#39; } }); config simple { baseURL: &amp;#39;https://some-domain.com/api/&amp;#39;, url: &amp;#39;/user&amp;#39;, method: &amp;#39;get&amp;#39;, // 默认是 get  // URL 参数  params: { ID: 12345 }, // 请求主体被发送的数据  data: { firstName: &amp;#39;Fred&amp;#39; }, // 自定义请求头  headers: {&amp;#39;X-Requested-With&amp;#39;: &amp;#39;XMLHttpRequest&amp;#39;}, // 请求超时的毫秒数(0 表示无超时时间)  timeout: 1000, // 对于给定的HTTP 响应状态码是 resolve 或 reject promise  validateStatus: function (status) { return status &amp;gt;= 200 &amp;amp;&amp;amp; status &amp;lt; 300; // 默认的  }, // 在向服务器发送前，修改请求数据  transformRequest: [function (data) { return data; }], transformResponse: [function (data) { return data; }], // HTTP 基础验证，并提供凭据  auth: { username: &amp;#39;admin&amp;#39;, password: &amp;#39;admin&amp;#39; }, // 服务器响应的数据类型，默认json，可以是 &amp;#39;arraybuffer&amp;#39;, &amp;#39;blob&amp;#39;, &amp;#39;document&amp;#39;, &amp;#39;text&amp;#39;, &amp;#39;stream&amp;#39;  responseType: &amp;#39;json&amp;#39;, // `onUploadProgress` 允许为上传处理进度事件  onUploadProgress: function (progressEvent) { // 对原生进度事件的处理  }, // `onDownloadProgress` 允许为下载处理进度事件  onDownloadProgress: function (progressEvent) { // 对原生进度事件的处理  }, httpAgent: new http.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hello-world-example.github.io/Node/docs/Vue/Data-Binding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hello-world-example.github.io/Node/docs/Vue/Data-Binding/</guid>
+      <description>数据双向绑定原理   Object.defineProperty(obj, prop, descriptor) 可以在对象上定义新属性，或者修改现有属性
+ 常规方式 页面 &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;Hello&amp;lt;/h1&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;a&amp;#34; /&amp;gt; js var title = document.getElementById(&amp;#34;title&amp;#34;); var input = document.getElementById(&amp;#34;a&amp;#34;), // 监听 input 输入事件，修改 h1 标签内容 input.oninput = function (e) { title.innerHTML = this.value; }; // 修改 input 数据的时候，需要同时修改 h1 标签内容 input.value = &amp;#39;123&amp;#39;; title.innerHTML = input.value; “数据绑定“ 之后 数据绑定实际上是重写 数据对象 的 get/set 方法，修改其默认行为
 Object.defineProperty(input, &amp;#39;val&amp;#39;, { //这里必须定义一个新的属性名称，不可以用 value，否则会报错。  get: function () { return this.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hello-world-example.github.io/JavaScript/docs/Vue/Vue-Cli-Quick-Start/</link>
+      <link>https://hello-world-example.github.io/Node/docs/Vue/Vue-Cli-Quick-Start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hello-world-example.github.io/JavaScript/docs/Vue/Vue-Cli-Quick-Start/</guid>
-      <description> Vue-Cli 快速入门  官方文档： https://cli.vuejs.org/zh/
- 安装 ᐅ npm install -g @vue/cli # 检查是否安装正确 ᐅ vue --version @vue/cli 4.1.1 ᐅ npm install -g @vue/cli-service-global hello-world # 创建一个 hello-world 项目 ᐅ vue create hello-world ᐅ cd hello-world ᐅ npm run serve # 详情查看 hello-world/README.md 单独查看组件 # 查看整个应用 ᐅ vue serve src/App.vue # 查看 HelloWorld 组件 ᐅ vue serve src/components/HelloWorld.vue vue ui 图形化界面创建项目  如果本地无法测试，可以从官网查看效果
+      <guid>https://hello-world-example.github.io/Node/docs/Vue/Vue-Cli-Quick-Start/</guid>
+      <description>Vue-Cli 快速入门  官方文档： https://cli.vuejs.org/zh/
+ 安装 ᐅ npm install -g @vue/cli # 检查是否安装正确 ᐅ vue --version @vue/cli 4.1.1 ᐅ npm install -g @vue/cli-service-global hello-world # 创建一个 hello-world 项目 ᐅ vue create hello-world ᐅ cd hello-world ᐅ npm run serve # 详情查看 hello-world/README.md 单独查看组件 # 查看整个应用 ᐅ vue serve src/App.vue # 查看 HelloWorld 组件 ᐅ vue serve src/components/HelloWorld.vue vue ui 图形化界面创建项目  如果本地无法测试，可以从 官网查看效果
  ᐅ vue ui Read More  官方文档 创建一个项目  </description>
     </item>
     

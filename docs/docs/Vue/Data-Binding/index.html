@@ -4,15 +4,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Binding | JavaScript</title>
+<meta name="description" content="数据双向绑定原理   Object.defineProperty(obj, prop, descriptor) 可以在对象上定义新属性，或者修改现有属性
+ 常规方式 页面 &lt;h1 id=&#34;title&#34;&gt;Hello&lt;/h1&gt; &lt;input type=&#34;text&#34; id=&#34;a&#34; /&gt; js var title = document.getElementById(&#34;title&#34;); var input = document.getElementById(&#34;a&#34;), // 监听 input 输入事件，修改 h1 标签内容 input.oninput = function (e) { title.innerHTML = this.value; }; // 修改 input 数据的时候，需要同时修改 h1 标签内容 input.value = &#39;123&#39;; title.innerHTML = input.value; “数据绑定“ 之后 数据绑定实际上是重写 数据对象 的 get/set 方法，修改其默认行为
+Object.defineProperty(input, &#39;val&#39;, { //这里必须定义一个新的属性名称，不可以用 value，否则会报错。  get: function () { return this."><meta property="og:title" content="" />
+<meta property="og:description" content="数据双向绑定原理   Object.defineProperty(obj, prop, descriptor) 可以在对象上定义新属性，或者修改现有属性
+ 常规方式 页面 &lt;h1 id=&#34;title&#34;&gt;Hello&lt;/h1&gt; &lt;input type=&#34;text&#34; id=&#34;a&#34; /&gt; js var title = document.getElementById(&#34;title&#34;); var input = document.getElementById(&#34;a&#34;), // 监听 input 输入事件，修改 h1 标签内容 input.oninput = function (e) { title.innerHTML = this.value; }; // 修改 input 数据的时候，需要同时修改 h1 标签内容 input.value = &#39;123&#39;; title.innerHTML = input.value; “数据绑定“ 之后 数据绑定实际上是重写 数据对象 的 get/set 方法，修改其默认行为
+Object.defineProperty(input, &#39;val&#39;, { //这里必须定义一个新的属性名称，不可以用 value，否则会报错。  get: function () { return this." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hello-world-example.github.io/Node/docs/Vue/Data-Binding/" />
+
+<title>Data Binding | Node</title>
+<link rel="icon" href="/Node/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/JavaScript/book.min.79de1f7861b0c98f453c0a93bebf3608a280809e417787746c373699639900d7.css">
-
-
-
-
-<link rel="icon" href="/JavaScript/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/Node/book.min.00b8e784201abfe629a6e0741e94bf44575af8612aec171d94e4ecbd3692cf5c.css" integrity="sha256-ALjnhCAav&#43;YppuB0HpS/RFda&#43;GEq7BcdlOTsvTaSz1w=">
 
 
 <!--
@@ -24,13 +29,14 @@ https://github.com/alex-shpak/hugo-book
 </head>
 
 <body>
-  <input type="checkbox" style="display: none" id="menu-control" />
-  <main class="flex container">
-
-    <aside class="book-menu fixed">
-      <nav>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
 <h2 class="book-brand">
-  <a href="https://hello-world-example.github.io/JavaScript/">JavaScript</a>
+  <a href="/Node"><span>Node</span>
+  </a>
 </h2>
 
 
@@ -38,50 +44,47 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-    
-  
-  
-  
 
-  <style>
-  nav ul a[href$="\2fJavaScript\2f docs\2fVue\2f Data-Binding\2f "] {
-      color: #004ed0;
-  }
-  </style>
 
-<ul>
+
+
+
+
+  <ul>
 <li><strong>Npm</strong>
-
 <ul>
-<li><a href="/JavaScript/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
-<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速开始</a></li>
-<li><a href="/JavaScript/docs/Npm/Package.json/">package.json</a></li>
-<li><a href="/JavaScript/docs/Npm/Command/">常用命令</a></li>
-<li><a href="/JavaScript/docs/Npm/FAQ/">常见问题</a></li>
-</ul></li>
-<li><strong>Yarn</strong>
-
-<ul>
-<li></li>
-</ul></li>
-<li><strong>Vue</strong>
-
-<ul>
-<li><a href="/JavaScript/docs/Vue/Data-Binding/">数据的双向绑定原理</a></li>
-<li><a href="/JavaScript/docs/Vue/Vue-Cli-Quick-Start/">Vue-Cli 快速入门</a></li>
-</ul></li>
-<li><strong>Element UI</strong>
-
-<ul>
-<li></li>
-</ul></li>
-<li><strong>Vue Element Admin</strong>
-
-<ul>
-<li></li>
-</ul></li>
-<li><a href="/JavaScript/docs/frontend-maven-plugin/">frontend-maven-plugin</a></li>
+<li>
+  <a href="/Node/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
+<li>
+  <a href="/Node/docs/Npm/Quick-Start/">npm 快速开始</a></li>
+<li>
+  <a href="/Node/docs/Npm/Package.json/">package.json</a></li>
+<li>
+  <a href="/Node/docs/Npm/Command/">常用命令</a></li>
+<li>
+  <a href="/Node/docs/Npm/FAQ/">常见问题</a></li>
 </ul>
+</li>
+<li><strong>Vue</strong>
+<ul>
+<li>
+  <a href="/Node/docs/Vue/Data-Binding/"class=active>数据的双向绑定原理</a></li>
+<li>
+  <a href="/Node/docs/Vue/Vue-Cli-Quick-Start/">Vue-Cli 快速入门</a></li>
+</ul>
+</li>
+<li><strong>Tools</strong>
+<ul>
+<li>
+  <a href="/Node/docs/Tools/Axios/">Axios</a></li>
+</ul>
+</li>
+<li>
+  <a href="/Node/docs/frontend-maven-plugin/">frontend-maven-plugin</a></li>
+</ul>
+
+
+
 
 
 
@@ -92,41 +95,69 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-<script>
-(function() {
-  var menu = document.querySelector("aside.book-menu nav");
-  addEventListener("beforeunload", function(event) {
-    localStorage.setItem("menu.scrollTop", menu.scrollTop);
-  });
-  menu.scrollTop = localStorage.getItem("menu.scrollTop");
-})();
-</script>
 
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
     </aside>
 
     <div class="book-page">
-      <header class="flex align-center justify-between book-header">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
   <label for="menu-control">
-    <img src="/JavaScript/svg/menu.svg" alt="Menu" />
+    <img src="/Node/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
+
   <strong>Data Binding</strong>
-</header>
+
+  <label for="toc-control">
+    <img src="/Node/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#数据双向绑定原理">数据双向绑定原理</a>
+      <ul>
+        <li><a href="#常规方式">常规方式</a>
+          <ul>
+            <li><a href="#页面">页面</a></li>
+            <li><a href="#js">js</a></li>
+          </ul>
+        </li>
+        <li><a href="#数据绑定-之后">“数据绑定“ 之后</a></li>
+        <li><a href="#read-more">Read More</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
 
       
-<article class="markdown">
-
-<h1 id="数据双向绑定原理">数据双向绑定原理</h1>
-
+      
+  <article class="markdown"><h1 id="数据双向绑定原理">数据双向绑定原理</h1>
 <blockquote>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty(obj, prop, descriptor)</a>  可以在对象上定义新属性，或者修改现有属性</p>
+<p>
+  <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty(obj, prop, descriptor)</a>  可以在对象上定义新属性，或者修改现有属性</p>
 </blockquote>
-
 <h2 id="常规方式">常规方式</h2>
-
 <h3 id="页面">页面</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;Hello&lt;/<span style="color:#f92672">h1</span>&gt;
-&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span> /&gt;</code></pre></div>
-<h3 id="js">js</h3>
+&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span> /&gt;
+</code></pre></div><h3 id="js">js</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;title&#34;</span>);
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;a&#34;</span>),
 <span style="color:#75715e">// 监听 input 输入事件，修改 h1 标签内容
@@ -137,9 +168,7 @@ https://github.com/alex-shpak/hugo-book
 <span style="color:#75715e">// 修改 input 数据的时候，需要同时修改 h1 标签内容
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;123&#39;</span>;
 <span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">value</span>;
-</code></pre></div>
-<h2 id="数据绑定-之后">“数据绑定“ 之后</h2>
-
+</code></pre></div><h2 id="数据绑定-之后">“数据绑定“ 之后</h2>
 <p>数据绑定实际上是重写 数据对象 的 get/set 方法，修改其默认行为</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">Object.<span style="color:#a6e22e">defineProperty</span>(<span style="color:#a6e22e">input</span>, <span style="color:#e6db74">&#39;val&#39;</span>, { <span style="color:#75715e">//这里必须定义一个新的属性名称，不可以用 value，否则会报错。
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">get</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> () {
@@ -153,65 +182,104 @@ https://github.com/alex-shpak/hugo-book
 
 <span style="color:#75715e">// 这时候给一个对象赋值，会调用 set 方法，实际行为已经被改变
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;good&#39;</span>;
-</code></pre></div>
-<h2 id="read-more">Read More</h2>
-
+</code></pre></div><h2 id="read-more">Read More</h2>
 <ul>
-<li><p><a href="https://www.cnblogs.com/lovebread/p/7875203.html">数据双向绑定原理</a></p></li>
-
-<li><p><a href="https://www.cnblogs.com/canfoo/p/6891868.html">vue 的双向绑定原理及实现</a></p></li>
+<li>
+<p>
+  <a href="https://www.cnblogs.com/lovebread/p/7875203.html">数据双向绑定原理</a></p>
+</li>
+<li>
+<p>
+  <a href="https://www.cnblogs.com/canfoo/p/6891868.html">vue 的双向绑定原理及实现</a></p>
+</li>
 </ul>
 </article>
-
+ 
       
-<div class="book-footer justify-between">
-  
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
   <div>
-    
-    <a href="https://github.com/hello-world-example/JavaScript/commit/e449b37ad31b85f2a6a10946f4bf9dd99b3ea7a8" title='Last modified Dec 14, 2019 by 杨凯彬' target="_blank" rel="noopener">
-      <img src="/JavaScript/svg/calendar.svg" alt="Changed" /> Dec 14, 2019
+    <a class="flex align-center" href="https://github.com/hello-world-example/Node/edit/master/HuGo/content/docs/Vue/Data-Binding.md" target="_blank" rel="noopener">
+      <img src="/Node/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
     </a>
   </div>
-  
-  
-  <div>
-    <a href="https://github.com/hello-world-example/JavaScript/edit/master/HuGo/content/docs/Vue/Data-Binding.md" target="_blank" rel="noopener">
-      <img src="/JavaScript/svg/edit.svg" alt="Edit" /> Edit this page
-    </a>
-  </div>
-  
+
 </div>
 
+ 
+        <script>
+    var images = document.getElementsByTagName("img")
+    for (var i = 0; i < images.length; i++) {
+        var image = images[i]
+        var src = image.getAttribute("src");
+        if (src.startsWith("-images")) {
+            image.setAttribute("src", "../" + src);
+        }
+        image.onclick = function () {
+            window.open(this.getAttribute("src"))
+        }
+    }
+</script>
+
+      </footer>
 
       
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     
-  
-
-  <aside class="book-toc level-3 fixed">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#数据双向绑定原理">数据双向绑定原理</a>
-<ul>
-<li><a href="#常规方式">常规方式</a>
-<ul>
-<li><a href="#页面">页面</a></li>
-<li><a href="#js">js</a></li>
-</ul></li>
-<li><a href="#数据绑定-之后">“数据绑定“ 之后</a></li>
-<li><a href="#read-more">Read More</a></li>
-</ul></li>
-</ul>
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#数据双向绑定原理">数据双向绑定原理</a>
+      <ul>
+        <li><a href="#常规方式">常规方式</a>
+          <ul>
+            <li><a href="#页面">页面</a></li>
+            <li><a href="#js">js</a></li>
+          </ul>
+        </li>
+        <li><a href="#数据绑定-之后">“数据绑定“ 之后</a></li>
+        <li><a href="#read-more">Read More</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
-  </aside>
 
-
-
+ 
+    </aside>
+    
   </main>
-  
-  
+
   
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

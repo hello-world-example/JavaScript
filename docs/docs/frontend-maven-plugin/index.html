@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frontend Maven Plugin | JavaScript</title>
+<meta name="description" content="frontend-maven-plugin   官网 ： https://github.com/eirslett/frontend-maven-plugin   NPM 示例 &lt;!-- https://github.com/eirslett/frontend-maven-plugin#usage --&gt; &lt;plugin&gt; &lt;groupId&gt;com.github.eirslett&lt;/groupId&gt; &lt;artifactId&gt;frontend-maven-plugin&lt;/artifactId&gt; &lt;version&gt;1.8.0&lt;/version&gt; &lt;configuration&gt; &lt;workingDirectory&gt;${project.basedir}/src/main/resources/node&lt;/workingDirectory&gt; &lt;!-- Latest LTS Version: 12.13.0 (includes npm 6.12.0) --&gt; &lt;!-- 文档 : http://npm.taobao.org/mirrors/node/v12.13.0/docs/api/index.html --&gt; &lt;nodeVersion&gt;v12.13.0&lt;/nodeVersion&gt; &lt;!-- 默认 : https://nodejs.org/dist/ --&gt; &lt;nodeDownloadRoot&gt;https://npm.taobao.org/mirrors/node/&lt;/nodeDownloadRoot&gt; &lt;!-- 包下载地址，默认：https://registry.npmjs.org/npm/-/ --&gt; &lt;npmDownloadRoot&gt;https://registry.npm.taobao.org/&lt;/npmDownloadRoot&gt; &lt;/configuration&gt; &lt;executions&gt; &lt;!-- 安装 node 和 npm --&gt; &lt;execution&gt; &lt;id&gt;install node and npm&lt;/id&gt; &lt;goals&gt; &lt;goal&gt;install-node-and-npm&lt;/goal&gt; &lt;/goals&gt; &lt;/execution&gt; &lt;!-- Install all project dependencies --&gt; &lt;execution&gt; &lt;id&gt;npm install&lt;/id&gt; &lt;phase&gt;prepare-package&lt;/phase&gt; &lt;goals&gt; &lt;goal&gt;npm&lt;/goal&gt; &lt;/goals&gt; &lt;configuration&gt; &lt;arguments&gt;install&lt;/arguments&gt; &lt;/configuration&gt; &lt;/execution&gt; &lt;!"><meta property="og:title" content="" />
+<meta property="og:description" content="frontend-maven-plugin   官网 ： https://github.com/eirslett/frontend-maven-plugin   NPM 示例 &lt;!-- https://github.com/eirslett/frontend-maven-plugin#usage --&gt; &lt;plugin&gt; &lt;groupId&gt;com.github.eirslett&lt;/groupId&gt; &lt;artifactId&gt;frontend-maven-plugin&lt;/artifactId&gt; &lt;version&gt;1.8.0&lt;/version&gt; &lt;configuration&gt; &lt;workingDirectory&gt;${project.basedir}/src/main/resources/node&lt;/workingDirectory&gt; &lt;!-- Latest LTS Version: 12.13.0 (includes npm 6.12.0) --&gt; &lt;!-- 文档 : http://npm.taobao.org/mirrors/node/v12.13.0/docs/api/index.html --&gt; &lt;nodeVersion&gt;v12.13.0&lt;/nodeVersion&gt; &lt;!-- 默认 : https://nodejs.org/dist/ --&gt; &lt;nodeDownloadRoot&gt;https://npm.taobao.org/mirrors/node/&lt;/nodeDownloadRoot&gt; &lt;!-- 包下载地址，默认：https://registry.npmjs.org/npm/-/ --&gt; &lt;npmDownloadRoot&gt;https://registry.npm.taobao.org/&lt;/npmDownloadRoot&gt; &lt;/configuration&gt; &lt;executions&gt; &lt;!-- 安装 node 和 npm --&gt; &lt;execution&gt; &lt;id&gt;install node and npm&lt;/id&gt; &lt;goals&gt; &lt;goal&gt;install-node-and-npm&lt;/goal&gt; &lt;/goals&gt; &lt;/execution&gt; &lt;!-- Install all project dependencies --&gt; &lt;execution&gt; &lt;id&gt;npm install&lt;/id&gt; &lt;phase&gt;prepare-package&lt;/phase&gt; &lt;goals&gt; &lt;goal&gt;npm&lt;/goal&gt; &lt;/goals&gt; &lt;configuration&gt; &lt;arguments&gt;install&lt;/arguments&gt; &lt;/configuration&gt; &lt;/execution&gt; &lt;!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hello-world-example.github.io/Node/docs/frontend-maven-plugin/" />
+
+<title>Frontend Maven Plugin | Node</title>
+<link rel="icon" href="/Node/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/JavaScript/book.min.79de1f7861b0c98f453c0a93bebf3608a280809e417787746c373699639900d7.css">
-
-
-
-
-<link rel="icon" href="/JavaScript/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/Node/book.min.00b8e784201abfe629a6e0741e94bf44575af8612aec171d94e4ecbd3692cf5c.css" integrity="sha256-ALjnhCAav&#43;YppuB0HpS/RFda&#43;GEq7BcdlOTsvTaSz1w=">
 
 
 <!--
@@ -24,13 +25,14 @@ https://github.com/alex-shpak/hugo-book
 </head>
 
 <body>
-  <input type="checkbox" style="display: none" id="menu-control" />
-  <main class="flex container">
-
-    <aside class="book-menu fixed">
-      <nav>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
 <h2 class="book-brand">
-  <a href="https://hello-world-example.github.io/JavaScript/">JavaScript</a>
+  <a href="/Node"><span>Node</span>
+  </a>
 </h2>
 
 
@@ -38,50 +40,47 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-    
-  
-  
-  
 
-  <style>
-  nav ul a[href$="\2fJavaScript\2f docs\2f frontend-maven-plugin\2f "] {
-      color: #004ed0;
-  }
-  </style>
 
-<ul>
+
+
+
+
+  <ul>
 <li><strong>Npm</strong>
-
 <ul>
-<li><a href="/JavaScript/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
-<li><a href="/JavaScript/docs/Npm/Quick-Start/">npm 快速开始</a></li>
-<li><a href="/JavaScript/docs/Npm/Package.json/">package.json</a></li>
-<li><a href="/JavaScript/docs/Npm/Command/">常用命令</a></li>
-<li><a href="/JavaScript/docs/Npm/FAQ/">常见问题</a></li>
-</ul></li>
-<li><strong>Yarn</strong>
-
-<ul>
-<li></li>
-</ul></li>
-<li><strong>Vue</strong>
-
-<ul>
-<li><a href="/JavaScript/docs/Vue/Data-Binding/">数据的双向绑定原理</a></li>
-<li><a href="/JavaScript/docs/Vue/Vue-Cli-Quick-Start/">Vue-Cli 快速入门</a></li>
-</ul></li>
-<li><strong>Element UI</strong>
-
-<ul>
-<li></li>
-</ul></li>
-<li><strong>Vue Element Admin</strong>
-
-<ul>
-<li></li>
-</ul></li>
-<li><a href="/JavaScript/docs/frontend-maven-plugin/">frontend-maven-plugin</a></li>
+<li>
+  <a href="/Node/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
+<li>
+  <a href="/Node/docs/Npm/Quick-Start/">npm 快速开始</a></li>
+<li>
+  <a href="/Node/docs/Npm/Package.json/">package.json</a></li>
+<li>
+  <a href="/Node/docs/Npm/Command/">常用命令</a></li>
+<li>
+  <a href="/Node/docs/Npm/FAQ/">常见问题</a></li>
 </ul>
+</li>
+<li><strong>Vue</strong>
+<ul>
+<li>
+  <a href="/Node/docs/Vue/Data-Binding/">数据的双向绑定原理</a></li>
+<li>
+  <a href="/Node/docs/Vue/Vue-Cli-Quick-Start/">Vue-Cli 快速入门</a></li>
+</ul>
+</li>
+<li><strong>Tools</strong>
+<ul>
+<li>
+  <a href="/Node/docs/Tools/Axios/">Axios</a></li>
+</ul>
+</li>
+<li>
+  <a href="/Node/docs/frontend-maven-plugin/"class=active>frontend-maven-plugin</a></li>
+</ul>
+
+
+
 
 
 
@@ -92,37 +91,58 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-<script>
-(function() {
-  var menu = document.querySelector("aside.book-menu nav");
-  addEventListener("beforeunload", function(event) {
-    localStorage.setItem("menu.scrollTop", menu.scrollTop);
-  });
-  menu.scrollTop = localStorage.getItem("menu.scrollTop");
-})();
-</script>
 
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
     </aside>
 
     <div class="book-page">
-      <header class="flex align-center justify-between book-header">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
   <label for="menu-control">
-    <img src="/JavaScript/svg/menu.svg" alt="Menu" />
+    <img src="/Node/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
+
   <strong>Frontend Maven Plugin</strong>
-</header>
+
+  <label for="toc-control">
+    <img src="/Node/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#frontend-maven-plugin">frontend-maven-plugin</a>
+      <ul>
+        <li><a href="#npm-示例">NPM 示例</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
 
       
-<article class="markdown">
-
-<h1 id="frontend-maven-plugin">frontend-maven-plugin</h1>
-
+      
+  <article class="markdown"><h1 id="frontend-maven-plugin">frontend-maven-plugin</h1>
 <blockquote>
 <ul>
 <li>官网 ： <a href="https://github.com/eirslett/frontend-maven-plugin">https://github.com/eirslett/frontend-maven-plugin</a></li>
 </ul>
 </blockquote>
-
 <h2 id="npm-示例">NPM 示例</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- https://github.com/eirslett/frontend-maven-plugin#usage --&gt;</span>
 <span style="color:#f92672">&lt;plugin&gt;</span>
@@ -175,51 +195,88 @@ https://github.com/alex-shpak/hugo-book
         <span style="color:#f92672">&lt;/execution&gt;</span>
 
     <span style="color:#f92672">&lt;/executions&gt;</span>
-<span style="color:#f92672">&lt;/plugin&gt;</span></code></pre></div></article>
+<span style="color:#f92672">&lt;/plugin&gt;</span>
 
+</code></pre></div></article>
+ 
       
-<div class="book-footer justify-between">
-  
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
   <div>
-    
-    <a href="https://github.com/hello-world-example/JavaScript/commit/447a36e5b553f0ed1798595198bb3960d040327e" title='Last modified Dec 14, 2019 by 杨凯彬' target="_blank" rel="noopener">
-      <img src="/JavaScript/svg/calendar.svg" alt="Changed" /> Dec 14, 2019
+    <a class="flex align-center" href="https://github.com/hello-world-example/Node/edit/master/HuGo/content/docs/frontend-maven-plugin.md" target="_blank" rel="noopener">
+      <img src="/Node/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
     </a>
   </div>
-  
-  
-  <div>
-    <a href="https://github.com/hello-world-example/JavaScript/edit/master/HuGo/content/docs/frontend-maven-plugin.md" target="_blank" rel="noopener">
-      <img src="/JavaScript/svg/edit.svg" alt="Edit" /> Edit this page
-    </a>
-  </div>
-  
+
 </div>
 
+ 
+        <script>
+    var images = document.getElementsByTagName("img")
+    for (var i = 0; i < images.length; i++) {
+        var image = images[i]
+        var src = image.getAttribute("src");
+        if (src.startsWith("-images")) {
+            image.setAttribute("src", "../" + src);
+        }
+        image.onclick = function () {
+            window.open(this.getAttribute("src"))
+        }
+    }
+</script>
+
+      </footer>
 
       
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     
-  
-
-  <aside class="book-toc level-3 fixed">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#frontend-maven-plugin">frontend-maven-plugin</a>
-<ul>
-<li><a href="#npm-示例">NPM 示例</a></li>
-</ul></li>
-</ul>
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#frontend-maven-plugin">frontend-maven-plugin</a>
+      <ul>
+        <li><a href="#npm-示例">NPM 示例</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
-  </aside>
 
-
-
+ 
+    </aside>
+    
   </main>
-  
-  
+
   
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
