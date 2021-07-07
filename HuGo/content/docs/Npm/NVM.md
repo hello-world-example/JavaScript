@@ -2,9 +2,7 @@
 
 > 如果使用 nvm 管理 node 版本，需要先卸载已经安装的 node 和 npm，否则切换版本的时候可能会报一下错误：
 >
-> >  nvm is not compatible with the npm config "prefix" option: currently set to "xxx"
-
-
+> > nvm is not compatible with the npm config "prefix" option: currently set to "xxx"
 
 ## 卸载已安装的 node & npm
 
@@ -26,10 +24,6 @@
 ᐅ rm -rf ~/.npm-global
 ```
 
-
-
-
-
 ## 官方安装方式
 
 > 官网：https://github.com/nvm-sh/nvm/
@@ -37,8 +31,6 @@
 ```bash
 ᐅ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 ```
-
-
 
 ## 手动安装方式
 
@@ -60,29 +52,29 @@ export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
 ᐅ source /etc/profile
 ```
 
-
-
 ## 使用 nvm
 
 ```bash
 # 查看有哪些可用版本
 ᐅ nvm ls-remote --lts
 
-# v8.17.0   (Latest LTS: Carbon)
-ᐅ nvm install v8.17.0
+# 安装指定版本
+ᐅ nvm install v12.21.0
 
 # 查看本地版本
 ᐅ nvm ls --no-alias
 
 # 切换到指定版本
-ᐅ nvm use v8.17.0
+ᐅ nvm use v12.21.0
 
 # 显示当前版本
-ᐅ nvm current 
+ᐅ nvm current
+
+# 设置默认版本
+ᐅ nvm alias default v12.21.0
 
 # 显示当前版本安装的全局包
 ᐅ npm ls -g --depth=0
 /Users/kail/.nvm/versions/node/v8.17.0/lib
 └── npm@6.13.4
 ```
-
