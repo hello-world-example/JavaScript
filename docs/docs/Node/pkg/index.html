@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="pkg 打可执行文件 安装 $ npm install -g pkg 缓存目录 $ mkdir -p /opt/Commons/Node/pkg/Cache $ sudo vim /etc/profile.d/node.sh export PKG_CACHE_PATH=/opt/Commons/Node/pkg/Cache # 生效 $ . /etc/profile # 校验 $ echo $PKG_CACHE_PATH Hello World index.js console.info(&#34;Hello World !&#34;) 打包 # 去掉 -t macos 是所有平台，这里只打 MAC 平台 $ pkg -t macos index.js # 成功后 $ ls index index.js 执行效果 # 执行 $ ./index Hello World package.json 方式 package.json 内容   &quot;bin&quot;: &quot;index.js&quot; ： 入口文件 pkg."><meta property="og:title" content="" />
+<meta property="og:description" content="pkg 打可执行文件 安装 $ npm install -g pkg 缓存目录 $ mkdir -p /opt/Commons/Node/pkg/Cache $ sudo vim /etc/profile.d/node.sh export PKG_CACHE_PATH=/opt/Commons/Node/pkg/Cache # 生效 $ . /etc/profile # 校验 $ echo $PKG_CACHE_PATH Hello World index.js console.info(&#34;Hello World !&#34;) 打包 # 去掉 -t macos 是所有平台，这里只打 MAC 平台 $ pkg -t macos index.js # 成功后 $ ls index index.js 执行效果 # 执行 $ ./index Hello World package.json 方式 package.json 内容   &quot;bin&quot;: &quot;index.js&quot; ： 入口文件 pkg." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hello-world-example.github.io/Node.js/docs/Node/pkg/" />
+<meta property="article:modified_time" content="2021-07-10T23:07:15+08:00" />
+<title>Pkg | Node.js</title>
+<link rel="icon" href="/Node.js/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/Node.js/book.min.00b8e784201abfe629a6e0741e94bf44575af8612aec171d94e4ecbd3692cf5c.css" integrity="sha256-ALjnhCAav&#43;YppuB0HpS/RFda&#43;GEq7BcdlOTsvTaSz1w=">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/Node.js"><span>Node.js</span>
+  </a>
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><strong>npm</strong>
+<ul>
+<li>
+  <a href="/Node.js/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
+<li>
+  <a href="/Node.js/docs/Npm/Quick-Start/">npm 快速开始</a></li>
+<li>
+  <a href="/Node.js/docs/Npm/Package.json/">package.json</a></li>
+<li>
+  <a href="/Node.js/docs/Npm/Command/">常用命令</a></li>
+<li>
+  <a href="/Node.js/docs/Npm/FAQ/">常见问题</a></li>
+</ul>
+</li>
+<li>
+  <a href="/Node.js/docs/yarn/Quick-Start/">yarn 快速开始</a></li>
+<li><strong>Node</strong>
+<ul>
+<li>
+  <a href="/Node.js/docs/Node/pkg/"class=active>pkg 可执行文件打包</a></li>
+</ul>
+</li>
+<li><strong>Vue</strong>
+<ul>
+<li>
+  <a href="/Node.js/docs/Vue/Data-Binding/">数据的双向绑定原理</a></li>
+<li>
+  <a href="/Node.js/docs/Vue/Vue-Cli-Quick-Start/">Vue-Cli 快速入门</a></li>
+</ul>
+</li>
+<li><strong>Tools</strong>
+<ul>
+<li>
+  <a href="/Node.js/docs/Tools/Axios/">Axios</a></li>
+</ul>
+</li>
+<li>
+  <a href="/Node.js/docs/frontend-maven-plugin/">frontend-maven-plugin</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/Node.js/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Pkg</strong>
+
+  <label for="toc-control">
+    <img src="/Node.js/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#pkg-打可执行文件">pkg 打可执行文件</a>
+      <ul>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#缓存目录">缓存目录</a></li>
+        <li><a href="#hello-world">Hello World</a>
+          <ul>
+            <li><a href="#indexjs">index.js</a></li>
+            <li><a href="#打包">打包</a></li>
+            <li><a href="#执行效果">执行效果</a></li>
+          </ul>
+        </li>
+        <li><a href="#packagejson-方式">package.json 方式</a>
+          <ul>
+            <li><a href="#packagejson-内容">package.json 内容</a></li>
+            <li><a href="#打包-1">打包</a></li>
+          </ul>
+        </li>
+        <li><a href="#read-more">Read More</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="pkg-打可执行文件">pkg 打可执行文件</h1>
+<h2 id="安装">安装</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ npm install -g pkg
+</code></pre></div><h2 id="缓存目录">缓存目录</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir -p /opt/Commons/Node/pkg/Cache
+
+$ sudo vim /etc/profile.d/node.sh
+export PKG_CACHE_PATH<span style="color:#f92672">=</span>/opt/Commons/Node/pkg/Cache
+
+<span style="color:#75715e"># 生效</span>
+$ . /etc/profile
+
+<span style="color:#75715e"># 校验</span>
+$ echo $PKG_CACHE_PATH
+</code></pre></div><h2 id="hello-world">Hello World</h2>
+<h3 id="indexjs">index.js</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;Hello World !&#34;</span>)
+</code></pre></div><h3 id="打包">打包</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 去掉 -t macos 是所有平台，这里只打 MAC 平台</span>
+$ pkg -t macos index.js
+
+
+<span style="color:#75715e"># 成功后</span>
+$ ls
+index        index.js
+</code></pre></div><h3 id="执行效果">执行效果</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 执行</span>
+$ ./index
+Hello World
+</code></pre></div><h2 id="packagejson-方式">package.json 方式</h2>
+<h3 id="packagejson-内容">package.json 内容</h3>
+<blockquote>
+<ul>
+<li><code>&quot;bin&quot;: &quot;index.js&quot;</code> ： 入口文件</li>
+<li><code>pkg.scripts</code> ： 需要打包进来的 js 文件</li>
+<li><code>pkg.assets</code> ： 静态文件的目录</li>
+</ul>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;demo-node-pkg&#34;</span>,
+  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#f92672">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;index.js&#34;</span>,
+  <span style="color:#f92672">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;MIT&#34;</span>,
+
+  <span style="color:#f92672">&#34;bin&#34;</span>: <span style="color:#e6db74">&#34;index.js&#34;</span>,
+  <span style="color:#f92672">&#34;pkg&#34;</span>: {
+    <span style="color:#f92672">&#34;scripts&#34;</span>: [
+      <span style="color:#e6db74">&#34;build/**/*.js&#34;</span>
+    ],
+    <span style="color:#f92672">&#34;assets&#34;</span>: [
+      <span style="color:#e6db74">&#34;dist/**/*&#34;</span>
+    ]
+  }
+}
+</code></pre></div><h3 id="打包-1">打包</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pkg -t macos .
+
+$ ls
+demo-node-pkg   index.js       package.json
+
+$ ./demo-node-pkg
+Hello World
+</code></pre></div><h2 id="read-more">Read More</h2>
+<ul>
+<li>
+  <a href="https://github.com/vercel/pkg">vercel/pkg: Package your Node.js project into an executable (github.com)</a></li>
+<li>
+  <a href="https://www.npmjs.com/package/pkg">pkg - npm (npmjs.com)</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/hello-world-example/Node.js/commit/60fee15c34bcdfc7fda42b02cf0e243b25bd85e1" title='Last modified by kaibin.yang | Jul 10, 2021' target="_blank" rel="noopener">
+      <img src="/Node.js/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>Jul 10, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/hello-world-example/Node.js/edit/master/HuGo/content/docs/Node/pkg.md" target="_blank" rel="noopener">
+      <img src="/Node.js/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        <script>
+    var images = document.getElementsByTagName("img")
+    for (var i = 0; i < images.length; i++) {
+        var image = images[i]
+        var src = image.getAttribute("src");
+        if (src.startsWith("-images")) {
+            image.setAttribute("src", "../" + src);
+        }
+        image.onclick = function () {
+            window.open(this.getAttribute("src"))
+        }
+    }
+</script>
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#pkg-打可执行文件">pkg 打可执行文件</a>
+      <ul>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#缓存目录">缓存目录</a></li>
+        <li><a href="#hello-world">Hello World</a>
+          <ul>
+            <li><a href="#indexjs">index.js</a></li>
+            <li><a href="#打包">打包</a></li>
+            <li><a href="#执行效果">执行效果</a></li>
+          </ul>
+        </li>
+        <li><a href="#packagejson-方式">package.json 方式</a>
+          <ul>
+            <li><a href="#packagejson-内容">package.json 内容</a></li>
+            <li><a href="#打包-1">打包</a></li>
+          </ul>
+        </li>
+        <li><a href="#read-more">Read More</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

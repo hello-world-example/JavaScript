@@ -20,6 +20,15 @@
     
     <item>
       <title></title>
+      <link>https://hello-world-example.github.io/Node.js/docs/Node/pkg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hello-world-example.github.io/Node.js/docs/Node/pkg/</guid>
+      <description>pkg 打可执行文件 安装 $ npm install -g pkg 缓存目录 $ mkdir -p /opt/Commons/Node/pkg/Cache $ sudo vim /etc/profile.d/node.sh export PKG_CACHE_PATH=/opt/Commons/Node/pkg/Cache # 生效 $ . /etc/profile # 校验 $ echo $PKG_CACHE_PATH Hello World index.js console.info(&amp;#34;Hello World !&amp;#34;) 打包 # 去掉 -t macos 是所有平台，这里只打 MAC 平台 $ pkg -t macos index.js # 成功后 $ ls index index.js 执行效果 # 执行 $ ./index Hello World package.json 方式 package.json 内容   &amp;quot;bin&amp;quot;: &amp;quot;index.js&amp;quot; ： 入口文件 pkg.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://hello-world-example.github.io/Node.js/docs/Npm/Command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
