@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="快速开始 安装 $ npm install -g yarn # # $ npm install -g tyarn 常用指令 install 安装依赖 $ yarn $ yarn install 添加依赖项 # 默认添加到 dependencies 节点 $ yarn add [package] $ yarn add [package]@[version] $ yarn add [package]@[tag] 将依赖项添加到不同的依赖类别中 # devDependencies $ yarn add [package] --dev # peerDependencies $ yarn add [package] --peer 更新依赖项 $ yarn up [package] $ yarn up [package]@[version] $ yarn up [package]@[tag] 删除依赖项 $ yarn remove [package] 更新 yarn 本体 $ yarn set version latest $ yarn set version from sources 其他 # 命令帮助 $ yarn help $ yarn -h $ yarn --help # 初始化项目 $ yarn init Read More   Usage | Yarn (yarnpkg."><meta property="og:title" content="" />
-<meta property="og:description" content="快速开始 安装 $ npm install -g yarn # # $ npm install -g tyarn 常用指令 install 安装依赖 $ yarn $ yarn install 添加依赖项 # 默认添加到 dependencies 节点 $ yarn add [package] $ yarn add [package]@[version] $ yarn add [package]@[tag] 将依赖项添加到不同的依赖类别中 # devDependencies $ yarn add [package] --dev # peerDependencies $ yarn add [package] --peer 更新依赖项 $ yarn up [package] $ yarn up [package]@[version] $ yarn up [package]@[tag] 删除依赖项 $ yarn remove [package] 更新 yarn 本体 $ yarn set version latest $ yarn set version from sources 其他 # 命令帮助 $ yarn help $ yarn -h $ yarn --help # 初始化项目 $ yarn init Read More   Usage | Yarn (yarnpkg." />
+<meta name="description" content="快速开始 安装 $ npm install -g yarn # # $ npm install -g tyarn 常用指令 install 安装依赖 $ yarn $ yarn install 添加依赖项 # 默认添加到 dependencies 节点 $ yarn add [package] $ yarn add [package]@[version] $ yarn add [package]@[tag] 将依赖项添加到不同的依赖类别中 # devDependencies $ yarn add [package] --dev # peerDependencies $ yarn add [package] --peer 更新依赖项 $ yarn up [package] $ yarn up [package]@[version] $ yarn up [package]@[tag] 删除依赖项 $ yarn remove [package] 更新 yarn 本体 $ yarn set version latest $ yarn set version from sources 其他 # 命令帮助 $ yarn help $ yarn -h $ yarn --help # 初始化项目 $ yarn init 对 npm 对比     npm yarn     安装依赖 npm install yarn   全局添加 npm install xxx -g yarn global add xxx   添加到 dependencies npm install xxx --save yarn add xxx   删除依赖 npm uninstall xxx --save yarn remove xxx   添加到 devDependencies npm install xxx --save-dev yarn add xxx --dev   升级 npm update --save yarn up    Read More   Usage | Yarn (yarnpkg."><meta property="og:title" content="" />
+<meta property="og:description" content="快速开始 安装 $ npm install -g yarn # # $ npm install -g tyarn 常用指令 install 安装依赖 $ yarn $ yarn install 添加依赖项 # 默认添加到 dependencies 节点 $ yarn add [package] $ yarn add [package]@[version] $ yarn add [package]@[tag] 将依赖项添加到不同的依赖类别中 # devDependencies $ yarn add [package] --dev # peerDependencies $ yarn add [package] --peer 更新依赖项 $ yarn up [package] $ yarn up [package]@[version] $ yarn up [package]@[tag] 删除依赖项 $ yarn remove [package] 更新 yarn 本体 $ yarn set version latest $ yarn set version from sources 其他 # 命令帮助 $ yarn help $ yarn -h $ yarn --help # 初始化项目 $ yarn init 对 npm 对比     npm yarn     安装依赖 npm install yarn   全局添加 npm install xxx -g yarn global add xxx   添加到 dependencies npm install xxx --save yarn add xxx   删除依赖 npm uninstall xxx --save yarn remove xxx   添加到 devDependencies npm install xxx --save-dev yarn add xxx --dev   升级 npm update --save yarn up    Read More   Usage | Yarn (yarnpkg." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hello-world-example.github.io/Node.js/docs/yarn/Quick-Start/" />
 <meta property="article:modified_time" content="2021-07-10T22:16:57+08:00" />
@@ -141,6 +141,7 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#其他">其他</a></li>
           </ul>
         </li>
+        <li><a href="#对-npm-对比">对 npm 对比</a></li>
         <li><a href="#read-more">Read More</a></li>
       </ul>
     </li>
@@ -194,7 +195,49 @@ $ yarn --help
 
 <span style="color:#75715e"># 初始化项目</span>
 $ yarn init
-</code></pre></div><h2 id="read-more">Read More</h2>
+</code></pre></div><h2 id="对-npm-对比">对 npm 对比</h2>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th>npm</th>
+<th>yarn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">安装依赖</td>
+<td><code>npm install</code></td>
+<td><code>yarn</code></td>
+</tr>
+<tr>
+<td align="left">全局添加</td>
+<td><code>npm install xxx -g</code></td>
+<td><code>yarn global add xxx</code></td>
+</tr>
+<tr>
+<td align="left">添加到  dependencies</td>
+<td><code>npm install xxx --save</code></td>
+<td><code>yarn add xxx</code></td>
+</tr>
+<tr>
+<td align="left">删除依赖</td>
+<td><code>npm uninstall xxx --save</code></td>
+<td><code>yarn remove xxx</code></td>
+</tr>
+<tr>
+<td align="left">添加到  devDependencies</td>
+<td><code>npm install xxx --save-dev</code></td>
+<td><code>yarn add xxx --dev</code></td>
+</tr>
+<tr>
+<td align="left">升级</td>
+<td><code>npm update --save</code></td>
+<td><code>yarn up</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="read-more">Read More</h2>
 <ul>
 <li>
   <a href="https://classic.yarnpkg.com/en/docs/usage">Usage | Yarn (yarnpkg.com)</a></li>
@@ -277,6 +320,7 @@ $ yarn init
             <li><a href="#其他">其他</a></li>
           </ul>
         </li>
+        <li><a href="#对-npm-对比">对 npm 对比</a></li>
         <li><a href="#read-more">Read More</a></li>
       </ul>
     </li>

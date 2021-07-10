@@ -89,6 +89,19 @@ $ yarn init
 
 
 
+## 对 npm 对比
+
+|                         | npm                          | yarn                  |
+| :---------------------- | ---------------------------- | --------------------- |
+| 安装依赖                | `npm install`                | `yarn`                |
+| 全局添加                | `npm install xxx -g`         | `yarn global add xxx` |
+| 添加到  dependencies    | `npm install xxx --save`     | `yarn add xxx`        |
+| 删除依赖                | `npm uninstall xxx --save`   | `yarn remove xxx`     |
+| 添加到  devDependencies | `npm install xxx --save-dev` | `yarn add xxx --dev`  |
+| 升级                    | `npm update --save`          | `yarn up`             |
+
+
+
 
 
 
