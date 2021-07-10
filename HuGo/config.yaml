@@ -1,8 +1,8 @@
-baseURL: https://hello-world-example.github.io/Node/
-title: Node
+baseURL: https://hello-world-example.github.io/Node.js/
+title: Node.js
 theme: book
 publishDir: '../docs'
-contentdir: '../demo-node-hugo'
+contentdir: '../demo-node.js-hugo'
 
 # Book configuration
 disablePathToLower: true
@@ -46,7 +46,7 @@ params:
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/hello-world-example/Node
+  BookRepo: https://github.com/hello-world-example/Node.js
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
