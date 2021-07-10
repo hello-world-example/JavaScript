@@ -1,0 +1,15 @@
+{
+  "name": "demo-node-pkg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": "index.js",
+  "pkg": {
+    "scripts": [
+      "build/**/*.js"
+    ],
+    "assets": [
+      "dist/**/*"
+    ]
+  }
+}
