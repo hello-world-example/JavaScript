@@ -8,7 +8,7 @@
 <meta property="og:description" content="frontend-maven-plugin   官网 ： https://github.com/eirslett/frontend-maven-plugin   NPM 示例 &lt;!-- https://github.com/eirslett/frontend-maven-plugin#usage --&gt; &lt;plugin&gt; &lt;groupId&gt;com.github.eirslett&lt;/groupId&gt; &lt;artifactId&gt;frontend-maven-plugin&lt;/artifactId&gt; &lt;version&gt;1.8.0&lt;/version&gt; &lt;configuration&gt; &lt;workingDirectory&gt;${project.basedir}/src/main/resources/node&lt;/workingDirectory&gt; &lt;!-- Latest LTS Version: 12.13.0 (includes npm 6.12.0) --&gt; &lt;!-- 文档 : http://npm.taobao.org/mirrors/node/v12.13.0/docs/api/index.html --&gt; &lt;nodeVersion&gt;v12.13.0&lt;/nodeVersion&gt; &lt;!-- 默认 : https://nodejs.org/dist/ --&gt; &lt;nodeDownloadRoot&gt;https://npm.taobao.org/mirrors/node/&lt;/nodeDownloadRoot&gt; &lt;!-- 包下载地址，默认：https://registry.npmjs.org/npm/-/ --&gt; &lt;npmDownloadRoot&gt;https://registry.npm.taobao.org/&lt;/npmDownloadRoot&gt; &lt;/configuration&gt; &lt;executions&gt; &lt;!-- 安装 node 和 npm --&gt; &lt;execution&gt; &lt;id&gt;install node and npm&lt;/id&gt; &lt;goals&gt; &lt;goal&gt;install-node-and-npm&lt;/goal&gt; &lt;/goals&gt; &lt;/execution&gt; &lt;!-- Install all project dependencies --&gt; &lt;execution&gt; &lt;id&gt;npm install&lt;/id&gt; &lt;phase&gt;prepare-package&lt;/phase&gt; &lt;goals&gt; &lt;goal&gt;npm&lt;/goal&gt; &lt;/goals&gt; &lt;configuration&gt; &lt;arguments&gt;install&lt;/arguments&gt; &lt;/configuration&gt; &lt;/execution&gt; &lt;!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hello-world-example.github.io/Node.js/docs/frontend-maven-plugin/" />
-
+<meta property="article:modified_time" content="2021-07-10T21:34:31+08:00" />
 <title>Frontend Maven Plugin | Node.js</title>
 <link rel="icon" href="/Node.js/favicon.png" type="image/x-icon">
 
@@ -47,7 +47,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <ul>
-<li><strong>Npm</strong>
+<li><strong>npm</strong>
 <ul>
 <li>
   <a href="/Node.js/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
@@ -59,6 +59,12 @@ https://github.com/alex-shpak/hugo-book
   <a href="/Node.js/docs/Npm/Command/">常用命令</a></li>
 <li>
   <a href="/Node.js/docs/Npm/FAQ/">常见问题</a></li>
+</ul>
+</li>
+<li><strong>yarn</strong>
+<ul>
+<li>
+  <a href="/Node.js/docs/yarn/Quick-Start/">yarn 快速开始</a></li>
 </ul>
 </li>
 <li><strong>Vue</strong>
@@ -206,6 +212,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/hello-world-example/Node.js/commit/78cbd3cea1ca30744be4352ad574ee1d0722c02e" title='Last modified by kaibin.yang | Jul 10, 2021' target="_blank" rel="noopener">
+      <img src="/Node.js/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>Jul 10, 2021</span>
+    </a>
+  </div>
 
 
 

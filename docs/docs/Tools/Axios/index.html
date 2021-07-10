@@ -8,7 +8,7 @@
 <meta property="og:description" content="Axios   官网：https://github.com/axios/axios 中文文档： https://www.kancloud.cn/yunye/axios/234845   基本语法结构 try&hellip;catch&hellip; axios.get(&#39;/user?ID=12345&#39;) .then(function (response) { ... }) .catch(function (error) { ... }); GET 参数 axios.get(&#39;/user&#39;, { params: { ID: 12345 } }) POST 参数 axios.post(&#39;/user&#39;, { firstName: &#39;Fred&#39;, lastName: &#39;Flintstone&#39; }) instance 参数 init var instance = axios.create({ baseURL: &#39;https://some-domain.com/api/&#39;, timeout: 1000, headers: { &#39;X-Custom-Header&#39;: &#39;foobar&#39; } }); config simple { baseURL: &#39;https://some-domain.com/api/&#39;, url: &#39;/user&#39;, method: &#39;get&#39;, // 默认是 get  // URL 参数  params: { ID: 12345 }, // 请求主体被发送的数据  data: { firstName: &#39;Fred&#39; }, // 自定义请求头  headers: {&#39;X-Requested-With&#39;: &#39;XMLHttpRequest&#39;}, // 请求超时的毫秒数(0 表示无超时时间)  timeout: 1000, // 对于给定的HTTP 响应状态码是 resolve 或 reject promise  validateStatus: function (status) { return status &gt;= 200 &amp;&amp; status &lt; 300; // 默认的  }, // 在向服务器发送前，修改请求数据  transformRequest: [function (data) { return data; }], transformResponse: [function (data) { return data; }], // HTTP 基础验证，并提供凭据  auth: { username: &#39;admin&#39;, password: &#39;admin&#39; }, // 服务器响应的数据类型，默认json，可以是 &#39;arraybuffer&#39;, &#39;blob&#39;, &#39;document&#39;, &#39;text&#39;, &#39;stream&#39;  responseType: &#39;json&#39;, // `onUploadProgress` 允许为上传处理进度事件  onUploadProgress: function (progressEvent) { // 对原生进度事件的处理  }, // `onDownloadProgress` 允许为下载处理进度事件  onDownloadProgress: function (progressEvent) { // 对原生进度事件的处理  }, httpAgent: new http." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hello-world-example.github.io/Node.js/docs/Tools/Axios/" />
-
+<meta property="article:modified_time" content="2021-07-10T21:34:31+08:00" />
 <title>Axios | Node.js</title>
 <link rel="icon" href="/Node.js/favicon.png" type="image/x-icon">
 
@@ -47,7 +47,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <ul>
-<li><strong>Npm</strong>
+<li><strong>npm</strong>
 <ul>
 <li>
   <a href="/Node.js/docs/Npm/NVM/">nvm 管理 Node 版本</a></li>
@@ -59,6 +59,12 @@ https://github.com/alex-shpak/hugo-book
   <a href="/Node.js/docs/Npm/Command/">常用命令</a></li>
 <li>
   <a href="/Node.js/docs/Npm/FAQ/">常见问题</a></li>
+</ul>
+</li>
+<li><strong>yarn</strong>
+<ul>
+<li>
+  <a href="/Node.js/docs/yarn/Quick-Start/">yarn 快速开始</a></li>
 </ul>
 </li>
 <li><strong>Vue</strong>
@@ -265,6 +271,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/hello-world-example/Node.js/commit/78cbd3cea1ca30744be4352ad574ee1d0722c02e" title='Last modified by kaibin.yang | Jul 10, 2021' target="_blank" rel="noopener">
+      <img src="/Node.js/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>Jul 10, 2021</span>
+    </a>
+  </div>
 
 
 

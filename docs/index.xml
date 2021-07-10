@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JavaScript on Node.js</title>
+    <title>Node.js</title>
     <link>https://hello-world-example.github.io/Node.js/</link>
-    <description>Recent content in JavaScript on Node.js</description>
+    <description>Recent content on Node.js</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="https://hello-world-example.github.io/Node.js/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hello-world-example.github.io/Node.js/_sidebar/</guid>
-      <description> Npm   nvm 管理 Node 版本  npm 快速开始  package.json  常用命令  常见问题   Vue   数据的双向绑定原理  Vue-Cli 快速入门   Tools   Axios    frontend-maven-plugin  </description>
+      <description> npm   nvm 管理 Node 版本  npm 快速开始  package.json  常用命令  常见问题   yarn   yarn 快速开始   Vue   数据的双向绑定原理  Vue-Cli 快速入门   Tools   Axios    frontend-maven-plugin  </description>
     </item>
     
     <item>
@@ -110,6 +110,15 @@ Object.defineProperty(input, &amp;#39;val&amp;#39;, { //这里必须定义一个
       <description>Vue-Cli 快速入门  官方文档： https://cli.vuejs.org/zh/
  安装 ᐅ npm install -g @vue/cli # 检查是否安装正确 ᐅ vue --version @vue/cli 4.1.1 ᐅ npm install -g @vue/cli-service-global hello-world # 创建一个 hello-world 项目 ᐅ vue create hello-world ᐅ cd hello-world ᐅ npm run serve # 详情查看 hello-world/README.md 单独查看组件 # 查看整个应用 ᐅ vue serve src/App.vue # 查看 HelloWorld 组件 ᐅ vue serve src/components/HelloWorld.vue vue ui 图形化界面创建项目  如果本地无法测试，可以从 官网查看效果
  ᐅ vue ui Read More  官方文档 创建一个项目  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hello-world-example.github.io/Node.js/docs/yarn/Quick-Start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hello-world-example.github.io/Node.js/docs/yarn/Quick-Start/</guid>
+      <description>快速开始 安装 $ npm install -g yarn # # $ npm install -g tyarn 常用指令 install 安装依赖 $ yarn $ yarn install 添加依赖项 # 默认添加到 dependencies 节点 $ yarn add [package] $ yarn add [package]@[version] $ yarn add [package]@[tag] 将依赖项添加到不同的依赖类别中 # devDependencies $ yarn add [package] --dev # peerDependencies $ yarn add [package] --peer 更新依赖项 $ yarn up [package] $ yarn up [package]@[version] $ yarn up [package]@[tag] 删除依赖项 $ yarn remove [package] 更新 yarn 本体 $ yarn set version latest $ yarn set version from sources 其他 # 命令帮助 $ yarn help $ yarn -h $ yarn --help # 初始化项目 $ yarn init Read More   Usage | Yarn (yarnpkg.</description>
     </item>
     
   </channel>
